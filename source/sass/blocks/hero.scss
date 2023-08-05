@@ -1,0 +1,18 @@
+.hero {
+  width: 100%;
+  min-height: 800px;
+  margin: 0;
+  padding: 0;
+
+  background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-background.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-background@2x.jpg") 50% 0 / cover no-repeat;
+  }
+}
+
+.hero__inner {
+  min-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
