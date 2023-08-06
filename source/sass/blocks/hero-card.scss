@@ -1,0 +1,267 @@
+.hero-card {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+
+  @include vp-1199 {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.hero-card-caucasus {
+  background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus@2x.jpg") 50% 0 / cover no-repeat;
+  }
+
+  @include vp-1199 {
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-tablet.jpg") 50% 0 / 768px 1024px no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus-tablet@2x.jpg") 50% 0 / 768px 1024px no-repeat;
+    }
+  }
+}
+
+.hero-card-kamchatka {
+  background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka@2x.jpg") 50% 0 / cover no-repeat;
+  }
+
+  @include vp-1199 {
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-tablet.jpg") 50% 0 / 768px 1024px no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka-tablet@2x.jpg") 50% 0 / 768px 1024px no-repeat;
+    }
+  }
+}
+
+.hero-card-altai {
+  background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai@2x.jpg") 50% 0 / cover no-repeat;
+  }
+
+  @include vp-1199 {
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-tablet.jpg") 50% 0 / 768px 1024px no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai-tablet@2x.jpg") 50% 0 / 768px 1024px no-repeat;
+    }
+  }
+}
+
+.hero-card__inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: rgba(15, 20, 41, 0.2);
+
+  @include vp-1199 {
+    width: 768px;
+    background: rgba(15, 20, 41, 0.1);
+  }
+}
+
+.hero-card__inner-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 182px 0 80px;
+
+  @include vp-1199 {
+    align-items: center;
+    width: 768px;
+    min-height: 1024px;
+    padding: 174px 47px 90px;
+  }
+}
+
+.hero-card__inner-container h2 {
+  position: relative;
+  z-index: 1;
+  width: 945px;
+  margin: 0 0 23px;
+  padding: 0;
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+
+  @include vp-1199 {
+    max-width: 674px;
+    margin-bottom: 13px;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+  }
+}
+
+.hero-card__inner-container p {
+  width: 470px;
+  margin: 0 0 37px;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include vp-1199 {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+}
+
+.hero-card__inner-container img {
+  position: absolute;
+  top: 202px;
+  right: 0;
+
+  @include vp-1199 {
+    position: static;
+    top: 0;
+  }
+}
+
+.hero-card__inner-container-audio {
+  position: absolute;
+  top: 301px;
+  right: 0;
+
+  @include vp-1199 {
+    position: static;
+  }
+}
+
+.hero-card__inner-container-link {
+  width: fit-content;
+  margin: 0;
+  padding: 20px 52px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  background: rgba(2, 102, 193, 1);
+  border: 1px solid rgba(2, 102, 193, 1);
+
+  @include vp-1199 {
+    padding: 20px 46px;
+    margin-bottom: 50px;
+  }
+}
+
+@include vp-1199 {
+  .hero-card-kamchatka .hero-card__inner-container-link {
+    margin-bottom: 34px;
+  }
+}
+
+@include vp-1199 {
+  .hero-card-altai .hero-card__inner-container-link {
+    margin-bottom: 70px;
+  }
+}
+
+.hero-card__box {
+  align-self: start;
+  display: flex;
+  gap: 10px;
+  margin: auto 0 0;
+  padding: 0;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.hero-card__box span {
+  position: relative;
+  margin: 0;
+  padding: 13px 20px 13px 39px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero-card__box svg {
+  position: absolute;
+  top: 15px;
+  left: 19px;
+}
+
+.hero-card__video-wrapper {
+  position: absolute;
+  top: 301px;
+  right: 0;
+  width: 482px;
+  height: 317px;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1199{
+    position: relative;
+    top: 0;
+    width: 442px;
+    height: 300px;
+  }
+}
+
+.hero-card__video {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.hero-card__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -46%);
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.hero-card__video-button:hover:not(:disabled),
+.hero-card__video-button:focus-visible:not(:disabled) {
+  circle {
+    stroke: rgba(28, 51, 116, 1);
+  }
+  path {
+    stroke: rgba(0, 0, 0, 1);
+  }
+  cursor: pointer;
+}
+
+.hero-card__video-button:active:not(:disabled) {
+  circle {
+    stroke: rgba(28, 51, 116, 1);
+    fill: rgba(28, 51, 116, 1);
+  }
+  path {
+    stroke: rgba(255, 255, 255, 1);
+  }
+}
+
+.hero-card__video-button:disabled {
+  circle {
+    stroke: rgba(2, 102, 193, 0.1);
+  }
+  path {
+    stroke: rgba(2, 102, 193, 0.1);
+    fill: rgba(2, 102, 193, 0.1);
+  }
+}

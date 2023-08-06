@@ -1,62 +1,241 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт о путешествиях на Кавказ">
   <title>travel</title>
   <link rel="stylesheet" href="css/style.min.css">
-<!--  <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2">-->
-<!--  <link rel="preload" href="fonts/Montserrat/Montserrat-SemiBold.woff2">-->
-<!--  <link rel="preload" href="fonts/Montserrat/Montserrat-ExtraBold.woff2">-->
-<!--  <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.woff2">-->
+  <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-ExtraBold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.woff2" as="font">
 </head>
 <body>
 <div class="wrapper">
 
-  <header class="header">
-    <a class="header__logo-link" href="#">
-      <picture>
-        <source
-          media="(max-width: 767px)"
-          srcset="./img/header/logo-header-mobile.svg"
-          width="112"
-          height="34"
-        >
-        <source
-          media="(max-width: 1199px)"
-          srcset="./img/header/logo-header-tablet.svg"
-          width="144"
-          height="44"
-        >
-        <img
-          src="./img/header/logo-header.svg"
-          width="205"
-          height="62"
-          alt="логотип сайта"
-        >
-      </picture>
-    </a>
+<!--  <header class="header">-->
+<!--    <a class="header__logo-link" href="#">-->
+<!--      <picture>-->
+<!--        <source-->
+<!--          media="(max-width: 767px)"-->
+<!--          srcset="./img/header/logo-header-mobile.svg"-->
+<!--          width="112"-->
+<!--          height="34"-->
+<!--        >-->
+<!--        <source-->
+<!--          media="(max-width: 1199px)"-->
+<!--          srcset="./img/header/logo-header-tablet.svg"-->
+<!--          width="144"-->
+<!--          height="44"-->
+<!--        >-->
+<!--        <img-->
+<!--          src="./img/header/logo-header.svg"-->
+<!--          width="205"-->
+<!--          height="62"-->
+<!--          alt="логотип сайта"-->
+<!--        >-->
+<!--      </picture>-->
+<!--    </a>-->
 
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list-item">
-          <a class="navigation__list-item-link" href="">Туры</a>
-        </li>
-      </ul>
-    </nav>
+<!--    <h1 class="visually-hidden">сайт туристических восхождений в горы</h1>-->
 
-    <a class="header__phone" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>
+<!--    <nav class="navigation">-->
+<!--      <ul class="navigation__list">-->
+<!--        <li class="navigation__list-item">-->
+<!--          <a class="navigation__list-item-link" href="">Туры</a>-->
+<!--        </li>-->
+<!--        <li class="navigation__list-item">-->
+<!--          <a class="navigation__list-item-link" href="">Обучение</a>-->
+<!--        </li>-->
+<!--        <li class="navigation__list-item">-->
+<!--          <a class="navigation__list-item-link" href="">О нас</a>-->
+<!--        </li>-->
+<!--        <li class="navigation__list-item">-->
+<!--          <a class="navigation__list-item-link" href="">Отзывы</a>-->
+<!--        </li>-->
+<!--        <li class="navigation__list-item">-->
+<!--          <a class="navigation__list-item-link" href="">Фотографии</a>-->
+<!--        </li>-->
+<!--        <li class="navigation__list-item">-->
+<!--          <a class="navigation__list-item-link" href="">Контакты</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </nav>-->
+
+<!--    <a class="header__phone" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>-->
 
 
-  </header>
-
-
+<!--  </header>-->
 
   <main>
     <div class="hero">
       <section class="hero__inner">
+        <div class="hero__slider swiper-container swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero-card hero-card-caucasus">
+              <div class="hero-card__inner">
+                <div class="hero-card__inner-container">
+                  <h2>Захватывающие вершины Кавказа</h2>
+                  <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                    восход на&nbsp;вершину горы Чегет.</p>
+                  <a class="hero-card__inner-container-link" href="#">Смотреть тур</a>
+                  <div class="hero-card__box">
+                    <span>6 дней/5 ночей
+                      <svg
+                        class="hero-card__box-image"
+                        width="12"
+                        height="12"
+                        aria-hidden="true"
+                      >
+                      <use href="img/sprite.svg#hero-moon"></use>
+                      </svg>
+                    </span>
+                    <span>
+                      <svg
+                        class="hero-card__box-image"
+                        width="12"
+                        height="12"
+                        aria-hidden="true"
+                      >
+                      <use href="img/sprite.svg#hero-level"></use>
+                      </svg>
+                      Высокая сложность
+                    </span>
+                  </div>
+                  <div class="hero-card__video-wrapper">
+                    <video
+                      class="hero-card__video"
+                      preload="auto"
+                      playsinline
+                      src="img/html-academy-courses.mp4"
+                      poster="img/hero/caucasus/hero-video-poster.jpg"
+                    ></video>
+
+                    <button
+                      class="hero-card__video-button"
+                      name="video-play"
+                      aria-label="Кнопка воспроизведения видео."
+                    >
+                      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="28" cy="28" r="27.5" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF"/>
+                        <path d="M37 28L25 17V39L37 28Z" fill="#FFFFFF" stroke="none"/>
+                      </svg>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero-card hero-card-kamchatka">
+              <div class="hero-card__inner">
+                <div class="hero-card__inner-container">
+                  <h2>Невероятная природа Камчатки</h2>
+                  <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному
+                    из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                  <a class="hero-card__inner-container-link" href="#">Смотреть тур</a>
+                  <div class="hero-card__box">
+                    <span>9&nbsp;дней/10 ночей
+                    <svg
+                      class="hero-card__box-image"
+                      width="12"
+                      height="12"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#hero-moon"></use>
+                      </svg>
+                    </span>
+                    <span>Средняя сложность
+                    <svg
+                      class="hero-card__box-image"
+                      width="12"
+                      height="12"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#hero-level"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <picture>
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="img/hero/kamchatka/hero-kamchatka-foto-tablet.webp 1x, img/hero/kamchatka/hero-kamchatka-foto-tablet@2x.webp 2x"
+                      type="image/webp"
+                      width="442"
+                      height="365"
+                    >
+                    <source
+                      srcset="img/hero/kamchatka/hero-kamchatka-foto.webp 1x, img/hero/kamchatka/hero-kamchatka-foto@2x.webp"
+                      type="image/webp"
+                      width="410"
+                      height="459"
+                    >
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="img/hero/kamchatka/hero-kamchatka-foto-tablet.png 1x, img/hero/kamchatka/hero-kamchatka-foto-tablet@2x.png 2x"
+                      width="442"
+                      height="365"
+                    >
+                    <img
+                      src="img/hero/kamchatka/hero-kamchatka-foto.png"
+                      srcset="img/hero/kamchatka/hero-kamchatka-foto@2x.png 2x"
+                      width="410"
+                      height="459"
+                      alt="фотографии людей на фоне гор Камчатки"
+                    >
+                  </picture>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero-card hero-card-altai">
+              <div class="hero-card__inner">
+                <div class="hero-card__inner-container">
+                  <h2>Магические пейзажи Алтайского Края</h2>
+                  <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих
+                    дух ландшафтов Алтайских гор.</p>
+                  <a class="hero-card__inner-container-link" href="#">Смотреть тур</a>
+                  <div class="hero-card__box">
+                    <span>8&nbsp;дней/7 ночей
+                    <svg
+                      class="hero-card__box-image"
+                      width="12"
+                      height="12"
+                      aria-hidden="true"
+                    >
+                      <use href="img/sprite.svg#hero-moon"></use>
+                      </svg>
+                    </span>
+                    <span>Легкая сложность
+                      <svg
+                        class="hero-card__box-image"
+                        width="12"
+                        height="12"
+                        aria-hidden="true"
+                      >
+                      <use href="img/sprite.svg#hero-level"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                  <iframe
+                    class="hero-card__inner-container-audio"
+                    style="border:none; width:340px; height:220px;"
+                    width="100%"
+                    height="180"
+                    src="https://music.yandex.ru/iframe/#track/116161079/25474374"
+                  >Слушайте <a href='https://music.yandex.ru/album/25474374/track/116161079'>018. Дэн Абрамов ушёл из
+                    React, ужасы TypeScript и плохие нейроальты</a> на Яндекс Музыке
+                  </iframe>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__box-button"></div>
 
       </section>
     </div>
@@ -67,7 +246,7 @@
 
 </div>
 
-<!--    <script src="js/vendor.min.js"></script>-->
+<script src="js/vendor.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>

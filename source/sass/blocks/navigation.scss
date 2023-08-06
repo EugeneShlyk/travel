@@ -5,6 +5,10 @@
 }
 
 .navigation__list {
+  display: flex;
+  gap: 31px;
+  flex-wrap: wrap;
+  max-width: 616px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -12,7 +16,7 @@
 }
 
 .navigation__list-item {
-  margin: 0;
+  margin: 21px 0 0 ;
   padding: 0;
   list-style: none;
 }

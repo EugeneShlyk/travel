@@ -1,25 +1,22 @@
 .header {
   position: absolute;
+  z-index: 10;
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 138px;
-  width: 1230px;
+  flex-wrap: wrap;
+  column-gap: 100px;
+  width: 1200px;
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
   min-height: 62px;
 }
 
-@media (max-width: 1230px) {
-  .header {
-    width: 100%;
-  }
-}
-
 .header__phone {
+  margin-top: 24px;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   font-weight: 600;

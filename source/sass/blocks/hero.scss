@@ -1,18 +1,55 @@
 .hero {
   width: 100%;
-  min-height: 800px;
   margin: 0;
   padding: 0;
-
-  background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-background.jpg") 50% 0 / cover no-repeat;
-
-  @media (min-resolution: $retina-dppx) {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/hero-background@2x.jpg") 50% 0 / cover no-repeat;
-  }
 }
 
 .hero__inner {
-  min-width: 1230px;
+  position: relative;
+  width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
+  overflow: hidden;
+
+  @media (max-width: 1439px) {
+    width: 100%;
+  }
+
+  @include vp-1199 {
+    width: 768px;
+  }
+}
+
+.hero__box-button {
+  position: absolute;
+  z-index: 1;
+  top: 693px;
+  right: 50%;
+  transform: translateX(888%);
+  display: flex;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+
+  @include vp-1199 {
+    top: auto;
+    right: 50%;
+    transform: translateX(50%)
+  }
+}
+
+.hero__box-button .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  opacity: 1;
+  background: transparent;
+}
+
+.hero__box-button .swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 1);
 }
