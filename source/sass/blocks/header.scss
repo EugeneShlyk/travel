@@ -22,3 +22,15 @@
   font-weight: 600;
   line-height: 18px;
 }
+
+.header__logo-link,
+.header__phone {
+  &:hover,
+  &:focus-visible {
+    color: rgba(28, 51, 116, 1);
+  }
+
+  &:active {
+    color: rgba(2, 102, 193, 1);
+  }
+}
