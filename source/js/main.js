@@ -4,6 +4,7 @@ import {videoWork} from './modules/video.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {toggleMenuHandler} from './modules/navigation.js';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     videoWork();
     changePoster();
+    toggleMenuHandler();
   });
 });
 

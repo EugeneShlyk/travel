@@ -4,6 +4,12 @@
   background: transparent;
 }
 
+@include vp-1199 {
+  .navigation--closed {
+    display: none;
+  }
+}
+
 .navigation__list {
   display: flex;
   gap: 31px;
@@ -16,7 +22,7 @@
 }
 
 .navigation__list-item {
-  margin: 21px 0 0 ;
+  margin: 21px 0 0;
   padding: 0;
   list-style: none;
 }
