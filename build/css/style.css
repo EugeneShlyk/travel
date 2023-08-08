@@ -2330,7 +2330,6 @@ button,
 }
 @media (max-width: 767px) {
   .navigation--opened .navigation__list-item-link {
-    margin-top: 0;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
@@ -2364,7 +2363,7 @@ button,
 }
 @media (max-width: 767px) {
   .navigation__list {
-    padding: 82px 15px 10px;
+    padding: 89px 14px 45px;
   }
 }
 
@@ -2376,6 +2375,11 @@ button,
 @media (max-width: 1199px) {
   .navigation__list-item {
     margin-top: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__list-item {
+    margin-top: 12px;
   }
 }
 

@@ -26,7 +26,6 @@
   color: rgba(45, 56, 63, 1);
 
   @include vp-767 {
-    margin-top: 0;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
@@ -52,7 +51,7 @@
   }
 
   @include vp-767 {
-    padding: 82px 15px 10px;
+    padding: 89px 14px 45px;
   }
 }
 
@@ -64,6 +63,11 @@
   @include vp-1199 {
     margin-top: 18px;
   }
+
+  @include vp-767 {
+    margin-top: 12px;
+  }
+
 }
 
 .navigation__list-item-link {
