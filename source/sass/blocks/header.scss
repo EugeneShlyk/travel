@@ -11,14 +11,32 @@
   width: 1200px;
   margin: 0;
   padding: 0;
-  min-height: 62px;
 
   @include vp-1199 {
-    top: 21px;
+    top: 22px;
     align-items: center;
-    //min-height: 44px;
     width: 768px;
     padding: 0 45px;
+  }
+}
+
+.header__logo-link picture:last-child{
+  display: none;
+}
+
+.header__logo-link--opened-menu {
+  picture:first-child {
+    display: none;
+  }
+
+  picture:last-child {
+    display: block;
+  }
+}
+
+@include vp-1199 {
+  .header__logo-link {
+    z-index: 1;
   }
 }
 
@@ -38,6 +56,7 @@
   display: none;
 
   @include vp-1199 {
+    z-index: 1;
     display: block;
     width: 26px;
     height: 26px;
@@ -68,8 +87,12 @@
   @include vp-1199 {
     font-size: 16px;
     line-height: 16px;
-    letter-spacing: 0.02em;
+    z-index: 1;
   }
+}
+
+.header__phone--opened-menu {
+  color: rgba(45, 56, 63, 1);
 }
 
 .header__phone {

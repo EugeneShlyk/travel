@@ -2177,11 +2177,10 @@ button,
   width: 1200px;
   margin: 0;
   padding: 0;
-  min-height: 62px;
 }
 @media (max-width: 1199px) {
   .header {
-    top: 21px;
+    top: 22px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2190,6 +2189,22 @@ button,
   }
 }
 
+.header__logo-link picture:last-child {
+  display: none;
+}
+
+.header__logo-link--opened-menu picture:first-child {
+  display: none;
+}
+.header__logo-link--opened-menu picture:last-child {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .header__logo-link {
+    z-index: 1;
+  }
+}
 .header__logo-link:hover, .header__logo-link:focus-visible {
   opacity: 0.7;
   outline: none;
@@ -2203,6 +2218,7 @@ button,
 }
 @media (max-width: 1199px) {
   .header__button-menu {
+    z-index: 1;
     display: block;
     width: 26px;
     height: 26px;
@@ -2236,8 +2252,12 @@ button,
   .header__phone {
     font-size: 16px;
     line-height: 16px;
-    letter-spacing: 0.02em;
+    z-index: 1;
   }
+}
+
+.header__phone--opened-menu {
+  color: rgb(45, 56, 63);
 }
 
 .header__phone:hover, .header__phone:focus-visible {
@@ -2253,17 +2273,34 @@ button,
   padding: 0;
   background: transparent;
 }
+@media (max-width: 1199px) {
+  .navigation {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
 
 @media (max-width: 1199px) {
   .navigation--closed {
     display: none;
   }
 }
+.navigation--opened .navigation__list-item-link {
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  color: rgb(45, 56, 63);
+}
+
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 31px;
+  gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 616px;
@@ -2272,11 +2309,28 @@ button,
   list-style: none;
   background: transparent;
 }
+@media (max-width: 1199px) {
+  .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    max-width: 100%;
+    padding: 103px 0 65px 44px;
+    background: rgb(255, 255, 255);
+  }
+}
 
 .navigation__list-item {
   margin: 21px 0 0;
   padding: 0;
   list-style: none;
+}
+@media (max-width: 1199px) {
+  .navigation__list-item {
+    margin-top: 18px;
+  }
 }
 
 .navigation__list-item-link {
@@ -2294,6 +2348,10 @@ button,
 }
 .navigation__list-item-link:active {
   border: 1px solid rgb(255, 255, 255);
+}
+
+.navigation--opened .navigation__list-item-link:active {
+  color: rgb(2, 102, 193);
 }
 
 .hero-card {

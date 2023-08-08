@@ -16,7 +16,7 @@
 <div class="wrapper">
 
   <header class="header">
-    <a class="header__logo-link" href="#">
+    <a class="header__logo-link header__logo-link--closed-menu" href="#">
       <picture>
         <source
           media="(max-width: 767px)"
@@ -34,6 +34,21 @@
           src="./img/header/logo-header.svg"
           width="205"
           height="62"
+          alt="логотип сайта"
+        >
+      </picture>
+
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          width="112"
+          height="34"
+          srcset="./img/header/logo-header-mobile-open-menu.svg"
+        >
+        <img
+          src="./img/header/logo-header-tablet-open-menu.svg"
+          width="144"
+          height="44"
           alt="логотип сайта"
         >
       </picture>
@@ -76,7 +91,7 @@
       </svg>
     </button>
 
-    <a class="header__phone" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>
+    <a class="header__phone header__phone--closed-menu" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>
 
   </header>
 
@@ -86,7 +101,7 @@
         <div class="hero__slider swiper-container swiper1">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-card hero-card-caucasus">
-              <div class="hero-card__inner">
+              <div class="hero-card__inner hero-card__inner--closed-menu">
                 <div class="hero-card__inner-container">
                   <h2>Захватывающие вершины Кавказа</h2>
                   <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
