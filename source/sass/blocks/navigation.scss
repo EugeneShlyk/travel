@@ -27,4 +27,17 @@
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   line-height: 16px;
+  border: 1px solid transparent;
+}
+
+.navigation__list-item-link {
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
 }

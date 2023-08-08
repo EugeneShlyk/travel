@@ -217,6 +217,21 @@
   }
 }
 
+.hero-card__inner-container-link {
+  &:hover,
+  &:focus-visible {
+    color: rgba(28, 51, 116, 1);
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(28, 51, 116, 1);
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(28, 51, 116, 1);
+  }
+}
+
 @include vp-1199 {
   .hero-card-kamchatka .hero-card__inner-container-link {
     margin-bottom: 34px;
@@ -298,6 +313,8 @@
 
 .hero-card__video-button:hover:not(:disabled),
 .hero-card__video-button:focus-visible:not(:disabled) {
+  outline: none;
+
   circle {
     stroke: rgba(28, 51, 116, 1);
   }

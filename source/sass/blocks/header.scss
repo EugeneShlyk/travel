@@ -14,6 +14,44 @@
   min-height: 62px;
 }
 
+.header__logo-link {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.header__button-menu {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    order: -1;
+  }
+}
+//
+//.header__button-menu svg {
+//  display: none;
+//}
+
+//.header__button-menu--closed svg:last-child {
+//  display: none;
+//}
+//
+//.header__button-menu--opened svg:first-child {
+//  display: none;
+//}
+
 .header__phone {
   margin-top: 24px;
   margin-bottom: 20px;
@@ -23,11 +61,11 @@
   line-height: 18px;
 }
 
-.header__logo-link,
 .header__phone {
   &:hover,
   &:focus-visible {
     color: rgba(28, 51, 116, 1);
+    outline: none;
   }
 
   &:active {
