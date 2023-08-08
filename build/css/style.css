@@ -2433,22 +2433,22 @@ button,
 }
 @media (max-width: 1199px) {
   .hero-card-caucasus {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-tablet.jpg") 50% 0/768px 1024px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-tablet.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .hero-card-caucasus {
-    background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus-tablet@2x.jpg") 50% 0/768px 1024px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus-tablet@2x.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 767px) {
   .hero-card-caucasus {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-mobile.jpg") 50% 0/320px 568px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-mobile.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .hero-card-caucasus {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-mobile@2x.jpg") 50% 0/320px 568px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-mobile@2x.jpg") 50% 0/cover no-repeat;
   }
 }
 
@@ -2462,22 +2462,22 @@ button,
 }
 @media (max-width: 1199px) {
   .hero-card-kamchatka {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-tablet.jpg") 50% 0/768px 1024px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-tablet.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .hero-card-kamchatka {
-    background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka-tablet@2x.jpg") 50% 0/768px 1024px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka-tablet@2x.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 767px) {
   .hero-card-kamchatka {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-mobile.jpg") 50% 0/320px 568px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-mobile.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .hero-card-kamchatka {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-mobile@2x.jpg") 50% 0/320px 568px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-mobile@2x.jpg") 50% 0/cover no-repeat;
   }
 }
 
@@ -2491,22 +2491,22 @@ button,
 }
 @media (max-width: 1199px) {
   .hero-card-altai {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-tablet.jpg") 50% 0/768px 1024px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-tablet.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .hero-card-altai {
-    background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai-tablet@2x.jpg") 50% 0/768px 1024px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai-tablet@2x.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 767px) {
   .hero-card-altai {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-mobile.jpg") 50% 0/320px 568px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-mobile.jpg") 50% 0/cover no-repeat;
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .hero-card-altai {
-    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-mobile@2x.jpg") 50% 0/320px 568px no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-mobile@2x.jpg") 50% 0/cover no-repeat;
   }
 }
 
@@ -2542,14 +2542,14 @@ button,
             align-items: center;
     width: 768px;
     min-height: 1024px;
-    padding: 174px 47px 90px;
+    padding: 174px 47px 120px;
   }
 }
 @media (max-width: 767px) {
   .hero-card__inner-container {
     width: 320px;
     min-height: 568px;
-    padding: 141px 18px 10px;
+    padding: 141px 18px 80px;
   }
 }
 
@@ -2658,7 +2658,7 @@ button,
 @media (max-width: 767px) {
   .hero-card__inner-container-link {
     padding: 17px 33px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 
