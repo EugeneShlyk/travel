@@ -5,6 +5,7 @@ const phone = document.querySelector('.header__phone');
 const cardWrapper = document.querySelector('.hero-card__inner');
 const body = document.querySelector('body');
 const modal = document.querySelector('.navigation__list');
+const menuLink = document.querySelector('.navigation__list-item-link');
 
 export const toggleMenuHandler = () => {
   navigationToggle.addEventListener('click', function () {
@@ -21,8 +22,10 @@ export const toggleMenuHandler = () => {
       cardWrapper.classList.add('hero-card__inner--opened-menu');
       body.classList.add('opened-menu');
       document.addEventListener('click', onOverlayClick);
+      menuLink.addEventListener('click', onMenuLinksClick);
     } else {
       closeModal();
+      document.removeEventListener('click', onOverlayClick);
     }
   });
 };
@@ -45,4 +48,8 @@ const onOverlayClick = (evt) => {
   if (evt.target === navigation && evt.target !== modal) {
     closeModal();
   }
+};
+
+const onMenuLinksClick = () => {
+  closeModal();
 };

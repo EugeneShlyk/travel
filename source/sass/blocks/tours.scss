@@ -1,4 +1,69 @@
 .tours {
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 123px 0 102px;
+}
 
+.tours__header-part {
+  margin: 0 0 54px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tours__header-part h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+}
+
+.tours__header-part-box-button {
+  display: flex;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.tours__header-part-button {
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  background: rgba(2, 102, 193, 1);
+  border: 1px solid rgba(2, 102, 193, 1);
+}
+
+.tours__header-part-button {
+  &:hover,
+  &:focus-visible {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(28, 51, 116, 1);
+    outline: none;
+    cursor: pointer;
+
+    path {
+      fill: rgba(28, 51, 116, 1);
+    }
+  }
+
+  &:active {
+    background: rgba(28, 51, 116, 1);
+
+    path {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &:disabled {
+    background: rgba(2, 102, 193, 0.1);
+    border: 1px solid rgba(2, 102, 193, 0.1);
+    cursor: auto;
+
+    path {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
 }

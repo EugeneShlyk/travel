@@ -1,0 +1,14 @@
+.tours-card {
+  width: 380px;
+  height: 412px;
+  margin: 0;
+  padding: 0;
+}
+
+.tours-card--caucasus {
+  background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/caucasus-tours.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/caucasus-tours@2x.jpg") 50% 0 / cover no-repeat;
+  }
+}
