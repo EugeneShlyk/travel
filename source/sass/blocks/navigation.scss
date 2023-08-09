@@ -10,6 +10,7 @@
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
   }
 }
 
@@ -93,4 +94,8 @@
 
 .navigation--opened .navigation__list-item-link:active {
   color: rgba(2, 102, 193, 1);
+}
+
+.opened-menu {
+  overflow: hidden;
 }

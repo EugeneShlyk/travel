@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid rgba(2, 102, 193, 0.1);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 104px;
+  row-gap: 16px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+
+
+
