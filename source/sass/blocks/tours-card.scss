@@ -1,14 +1,97 @@
 .tours-card {
+  display: flex;
+  flex-direction: column;
   width: 380px;
   height: 412px;
+  margin: 0;
+  padding: 28px 20px;
+  color: rgba(255, 255, 255, 1);
+  background: transparent;
+}
+
+.tours-card--elbrus {
+  background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/elbrus-tours.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/elbrus-tours@2x.jpg") 50% 0 / cover no-repeat;
+  }
+}
+
+.tours-card__inner {
+  display: grid;
+  grid-template-columns: 108px 108px 108px;
+  column-gap: 8px;
+  row-gap: 16px;
+  margin: auto 0 0;
+  padding: 0;
+}
+
+.tours-card__inner > span {
+  margin: 0;
+  padding: 9px 21px 9px 39px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  background: rgba(2, 102, 193, 1);
+}
+
+.tours-card__inner h3 {
+  grid-column: 1 / 3;
+  margin: 7px 0 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+
+.tours-card__inner-footer {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 21px 0 0;
+}
+
+.tours-card__inner-footer-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  min-width: 71px;
   margin: 0;
   padding: 0;
 }
 
-.tours-card--caucasus {
-  background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/caucasus-tours.jpg") 50% 0 / cover no-repeat;
-
-  @media (min-resolution: $retina-dppx) {
-    background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/caucasus-tours@2x.jpg") 50% 0 / cover no-repeat;
-  }
+.tours-card__inner-footer-item:first-child {
+  min-width: 79px;
 }
+
+.tours-card__inner-footer-item:first-child::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tours-card__inner-footer-item span {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.tours-card__inner-footer-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+
+}
+
