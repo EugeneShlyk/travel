@@ -1,7 +1,14 @@
-
-
-.tours-wrapper {
+.tours-training-wrapper {
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../../img/tours/tours-background-left.png") 50% 0 / 837px 279px no-repeat,
+              url("../../img/tours/tours-background-right.png") 50% 0 / 602px 1364px no-repeat ;
+}
+
+.tours-training-wrapper__tours-wrapper {
+  width: 100%;
+  min-height: 1200px;
   margin: 0;
   padding: 0;
   background: transparent;

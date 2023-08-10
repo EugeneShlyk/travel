@@ -2823,6 +2823,7 @@ button,
 }
 
 .tours__header-part {
+  position: relative;
   margin: 0 0 54px;
   padding: 0;
   display: -webkit-box;
@@ -2842,6 +2843,19 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
+}
+
+.tours__header-part span {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgba(45, 56, 63, 0.03);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
 }
 
 .tours__header-part-box-button {
@@ -2890,8 +2904,16 @@ button,
   overflow: hidden;
 }
 
-.tours-wrapper {
+.tours-training-wrapper {
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../../img/tours/tours-background-left.png") 50% 0/837px 279px no-repeat, url("../../img/tours/tours-background-right.png") 50% 0/602px 1364px no-repeat;
+}
+
+.tours-training-wrapper__tours-wrapper {
+  width: 100%;
+  min-height: 1200px;
   margin: 0;
   padding: 0;
   background: transparent;
@@ -2995,11 +3017,18 @@ button,
   display: block;
   min-width: 70px;
   margin: 0;
-  padding: 0 8px 0 0;
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   text-align: end;
+}
+
+.tours-card--elbrus span {
+  padding: 0 8px 0 0;
+}
+
+.tours-card--adygea span {
+  padding: 0 4px 0 0;
 }
 
 .tours-card__duration span:first-child::before {
@@ -3043,7 +3072,7 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  max-width: 300px;
+  max-width: 240px;
 }
 
 .tours-card__inner-footer {

@@ -5,6 +5,7 @@
 }
 
 .tours__header-part {
+  position: relative;
   margin: 0 0 54px;
   padding: 0;
   display: flex;
@@ -18,6 +19,17 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
+}
+
+.tours__header-part span {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: fit-content;
+  color: rgba(45, 56, 63, 0.03);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
 }
 
 .tours__header-part-box-button {
