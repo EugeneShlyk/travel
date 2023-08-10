@@ -2821,6 +2821,12 @@ button,
   margin: 0 auto;
   padding: 123px 0 102px;
 }
+@media (max-width: 1199px) {
+  .tours {
+    width: 676px;
+    padding: 83px 0 70px;
+  }
+}
 
 .tours__header-part {
   position: relative;
@@ -2836,6 +2842,11 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1199px) {
+  .tours__header-part {
+    margin-bottom: 38px;
+  }
+}
 
 .tours__header-part h2 {
   margin: 0;
@@ -2843,6 +2854,13 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
+  z-index: 1;
+}
+@media (max-width: 1199px) {
+  .tours__header-part h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .tours__header-part span {
@@ -2865,6 +2883,7 @@ button,
   gap: 4px;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .tours__header-part-button {
@@ -2904,6 +2923,12 @@ button,
   margin-bottom: 50px;
   overflow: hidden;
 }
+@media (max-width: 1199px) {
+  .tours__slider {
+    width: 666px;
+    margin: 0 auto;
+  }
+}
 
 .tours__show-all-tours {
   display: block;
@@ -2926,7 +2951,16 @@ button,
 
 .tours__show-all-tours:hover, .tours__show-all-tours:focus-visible {
   outline: none;
-  color: #15ab07;
+  color: rgb(28, 51, 116);
+}
+.tours__show-all-tours:hover path, .tours__show-all-tours:focus-visible path {
+  stroke: rgb(28, 51, 116);
+}
+.tours__show-all-tours:active {
+  color: rgb(2, 102, 193);
+}
+.tours__show-all-tours:active path {
+  stroke: rgb(2, 102, 193);
 }
 
 .tours-training-wrapper {
@@ -2936,12 +2970,37 @@ button,
 }
 
 .tours-training-wrapper__inner {
+  position: relative;
   width: 100%;
   max-width: 1440px;
   min-height: 1200px;
   margin: 0 auto;
   padding: 0;
-  background: url("../../img/tours/tours-background-left.png") -69% 54.5%/837px 279px no-repeat, url("../../img/tours/tours-background-right.png") 100% 11%/602px 1364px no-repeat;
+}
+@media (max-width: 1199px) {
+  .tours-training-wrapper__inner {
+    width: 768px;
+  }
+}
+
+.tours-training-wrapper__inner::before {
+  content: "";
+  position: absolute;
+  top: 502px;
+  left: -418px;
+  width: 837px;
+  height: 279px;
+  background: url("../../img/tours/tours-background-left.png") 0 0/837px 279px no-repeat;
+}
+
+.tours-training-wrapper__inner::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 0;
+  width: 602px;
+  height: 1364px;
+  background: url("../../img/tours/tours-background-right.png") 0 0/602px 1364px no-repeat;
 }
 
 .tours-card {
@@ -2959,6 +3018,11 @@ button,
   padding: 28px 20px;
   color: rgb(255, 255, 255);
   background: transparent;
+}
+@media (max-width: 1199px) {
+  .tours-card {
+    width: 324px;
+  }
 }
 
 .tours-card--elbrus {
@@ -2988,6 +3052,12 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .tours-card {
+    background-position: 58% 0;
+  }
+}
+
 .tours-card::before {
   content: "";
   position: absolute;
@@ -3010,12 +3080,24 @@ button,
   margin: auto 0 0;
   padding: 0;
 }
+@media (max-width: 1199px) {
+  .tours-card__inner {
+    -ms-grid-columns: 97px 1fr 1fr;
+    grid-template-columns: 97px 1fr 1fr;
+  }
+}
 
 .tours-card__location {
   position: relative;
   margin: 0;
-  padding: 2px 21px 4px 39px;
+  padding: 2px 0 4px 39px;
   background: rgb(2, 102, 193);
+}
+@media (max-width: 1199px) {
+  .tours-card__location {
+    padding-left: 31px;
+    padding-bottom: 3px;
+  }
 }
 
 .tours-card__location span {
@@ -3030,6 +3112,11 @@ button,
   position: absolute;
   top: 9px;
   left: 23px;
+}
+@media (max-width: 1199px) {
+  .tours-card__location svg {
+    left: 15px;
+  }
 }
 
 .tours-card__duration {
@@ -3062,6 +3149,11 @@ button,
 .tours-card--elbrus span {
   padding: 0 8px 0 0;
 }
+@media (max-width: 1199px) {
+  .tours-card--elbrus span {
+    padding-right: 6px;
+  }
+}
 
 .tours-card--adygea span {
   padding: 0 4px 0 0;
@@ -3079,6 +3171,11 @@ button,
   width: 20px;
   height: 20px;
 }
+@media (max-width: 1199px) {
+  .tours-card__duration span:first-child::before {
+    left: 10px;
+  }
+}
 
 .tours-card__duration span:last-child::before {
   content: "";
@@ -3092,6 +3189,11 @@ button,
   width: 20px;
   height: 20px;
 }
+@media (max-width: 1199px) {
+  .tours-card__duration span:last-child::before {
+    left: 4px;
+  }
+}
 
 .tours-card__inner h3 {
   -ms-grid-column: 1;
@@ -3102,6 +3204,16 @@ button,
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  z-index: 1;
+}
+@media (max-width: 1199px) {
+  .tours-card__inner h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    max-width: 233px;
+    margin-top: 8px;
+  }
 }
 
 .tours-card--altai h3 {

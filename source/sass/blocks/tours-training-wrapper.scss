@@ -5,11 +5,36 @@
 }
 
 .tours-training-wrapper__inner {
+  position: relative;
   width: 100%;
   max-width: 1440px;
   min-height: 1200px;
   margin: 0 auto;
   padding: 0;
-  background: url("../../img/tours/tours-background-left.png") -69% 54.5% / 837px 279px no-repeat,
-  url("../../img/tours/tours-background-right.png") 100% 11% / 602px 1364px no-repeat;
+  //background: url("../../img/tours/tours-background-left.png") -69% 54.5% / 837px 279px no-repeat,
+  //url("../../img/tours/tours-background-right.png") 100% 11% / 602px 1364px no-repeat;
+
+  @include vp-1199 {
+    width: 768px;
+  }
+}
+
+.tours-training-wrapper__inner::before {
+  content: "";
+  position: absolute;
+  top: 502px;
+  left: -418px;
+  width: 837px;
+  height: 279px;
+  background: url("../../img/tours/tours-background-left.png") 0 0 / 837px 279px no-repeat,
+}
+
+.tours-training-wrapper__inner::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 0;
+  width: 602px;
+  height: 1364px;
+  background: url("../../img/tours/tours-background-right.png") 0 0 / 602px 1364px no-repeat;
 }

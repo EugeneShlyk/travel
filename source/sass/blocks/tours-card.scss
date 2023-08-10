@@ -8,6 +8,10 @@
   padding: 28px 20px;
   color: rgba(255, 255, 255, 1);
   background: transparent;
+
+  @include vp-1199 {
+    width: 324px;
+  }
 }
 
 .tours-card--elbrus {
@@ -16,6 +20,7 @@
   @media (min-resolution: $retina-dppx) {
     background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/elbrus-tours@2x.jpg") 50% 0 / cover no-repeat;
   }
+
 }
 
 .tours-card--altai {
@@ -31,6 +36,12 @@
 
   @media (min-resolution: $retina-dppx) {
     background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/adygea-tours@2x.jpg") 50% 0 / cover no-repeat;
+  }
+}
+
+.tours-card {
+  @include vp-1199 {
+    background-position: 58% 0;
   }
 }
 
@@ -51,13 +62,22 @@
   row-gap: 16px;
   margin: auto 0 0;
   padding: 0;
+
+  @include vp-1199 {
+    grid-template-columns: 97px 1fr 1fr;
+  }
 }
 
 .tours-card__location {
   position: relative;
   margin: 0;
-  padding: 2px 21px 4px 39px;
+  padding: 2px 0 4px 39px;
   background: rgba(2, 102, 193, 1);
+
+  @include vp-1199 {
+    padding-left: 31px;
+    padding-bottom: 3px;
+  }
 }
 
 .tours-card__location span {
@@ -72,6 +92,10 @@
   position: absolute;
   top: 9px;
   left: 23px;
+
+  @include vp-1199 {
+    left: 15px;
+  }
 }
 
 .tours-card__duration {
@@ -98,6 +122,10 @@
 
 .tours-card--elbrus span {
   padding: 0 8px 0 0;
+
+  @include vp-1199 {
+    padding-right: 6px;
+  }
 }
 
 .tours-card--adygea span {
@@ -113,6 +141,10 @@
   background: url("./../../img/svg/tour-day.svg");
   width: 20px;
   height: 20px;
+
+  @include vp-1199 {
+    left: 10px;
+  }
 }
 
 .tours-card__duration span:last-child::before {
@@ -124,6 +156,10 @@
   background: url("./../../img/svg/tour-night.svg");
   width: 20px;
   height: 20px;
+
+  @include vp-1199 {
+    left: 4px;
+  }
 }
 
 .tours-card__inner h3 {
@@ -133,6 +169,13 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  z-index: 1;
+
+  @include vp-1199 {
+    grid-column: 1 / 4;
+    max-width: 233px;
+    margin-top: 8px;
+  }
 }
 
 .tours-card--altai h3 {

@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   workHeroSlider();
+  initToursSlider();
 
   // Modules
   // ---------------------------------
@@ -30,7 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
     videoWork();
     changePoster();
     toggleMenuHandler();
-    initToursSlider();
   });
 });
 
