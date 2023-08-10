@@ -1,5 +1,6 @@
-import {workSlider} from './modules/hero-slider.js';
+import {workHeroSlider} from './modules/hero-slider.js';
 import {changePoster} from './modules/poster-video.js';
+import {initToursSlider} from './modules/tours-slider.js';
 import {videoWork} from './modules/video.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
@@ -14,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  workSlider();
+  workHeroSlider();
 
   // Modules
   // ---------------------------------
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     videoWork();
     changePoster();
     toggleMenuHandler();
+    initToursSlider();
   });
 });
 

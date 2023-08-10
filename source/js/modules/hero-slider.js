@@ -1,6 +1,6 @@
 const Swiper = window.Swiper;
 
-export const workSlider = () =>
+export const workHeroSlider = () =>
   new Swiper('.hero__slider', {
     slidesPerView: 1,
     spaceBetween: 0,

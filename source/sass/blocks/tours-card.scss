@@ -17,6 +17,22 @@
   }
 }
 
+.tours-card--altai {
+  background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/altai-tours.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/altai-tours@2x.jpg") 50% 0 / cover no-repeat;
+  }
+}
+
+.tours-card--adygea {
+  background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/adygea-tours.jpg") 50% 0 / cover no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: rgba(2, 102, 193, 0.3) url("../../img/tours-card/adygea-tours@2x.jpg") 50% 0 / cover no-repeat;
+  }
+}
+
 .tours-card__inner {
   display: grid;
   grid-template-columns: 108px 108px 108px;
@@ -26,13 +42,69 @@
   padding: 0;
 }
 
-.tours-card__inner > span {
+.tours-card__location {
+  position: relative;
   margin: 0;
-  padding: 9px 21px 9px 39px;
+  padding: 0 21px 4px 39px;
+  background: rgba(2, 102, 193, 1);
+}
+
+.tours-card__location span {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
-  background: rgba(2, 102, 193, 1);
+}
+
+.tours-card__location svg {
+  position: absolute;
+  top: 7px;
+  left: 23px;
+}
+
+.tours-card__duration {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.tours-card__duration span {
+  position: relative;
+  display: block;
+  min-width: 70px;
+  margin: 0;
+  padding: 0 8px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: end;
+}
+
+.tours-card__duration span:first-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 29px;
+  background: url("./../../img/svg/tour-day.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.tours-card__duration span:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24px;
+  background: url("./../../img/svg/tour-night.svg");
+  width: 20px;
+  height: 20px;
 }
 
 .tours-card__inner h3 {
@@ -44,6 +116,10 @@
   line-height: 28px;
 }
 
+.tours-card--altai h3 {
+  grid-column: 1 / 4;
+  max-width: 300px;
+}
 
 .tours-card__inner-footer {
   grid-column: 1 / 4;
