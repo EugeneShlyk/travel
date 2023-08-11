@@ -2,29 +2,91 @@
   width: 100%;
   margin: 0;
   padding: 18px 0 88px;
+
+  @include vp-1199 {
+    padding: 11px 0 88px;
+  }
 }
 
 .training__inner {
-  width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px 20px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+
+  @include vp-1199 {
+    width: 708px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    padding: 0 15px 20px;
+  }
 }
 
 .training__inner h2 {
-  margin: 0 0 32px;
+  margin: 40px 0 32px;
   padding: 0;
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
+
+  @include vp-1199 {
+    margin-bottom: 21px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    margin-top: 36px;
+    margin-bottom: 17px;
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
-.training__inner p {
+.training__inner > span {
+  position: absolute;
+  top: 22px;
+  left: 16px;
+  width: fit-content;
+  color: rgba(45, 56, 63, 0.03);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  z-index: 1;
+
+  @include vp-1199 {
+    top: 27px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.training__inner > p {
   width: 820px;
   margin: 0 0 49px;
   padding: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+
+  @include vp-1199 {
+    max-width: 550px;
+    margin-bottom: 57px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 38px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

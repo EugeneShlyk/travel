@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .tours-training-wrapper__inner {
@@ -63,9 +64,9 @@
     right: -170px;
 
     background: url("../../img/tours/tours-background-right-mobile.png") 0 0 / 293px 595px no-repeat;
-  }
 
-  @media (min-resolution: $retina-dppx) {
-    background: url("../../img/tours/tours-background-right-mobile@2x.png") 0 0 / 293px 595px no-repeat;
+    @media (min-resolution: $retina-dppx) {
+      background: url("../../img/tours/tours-background-right-mobile@2x.png") 0 0 / 293px 595px no-repeat;
+    }
   }
 }
