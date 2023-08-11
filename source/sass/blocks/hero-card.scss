@@ -16,17 +16,17 @@
 }
 
 .hero-card-caucasus {
-  background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus.jpg") 50% 0 / cover no-repeat;
+  background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus.jpg") 50% 0 / cover no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus@2x.jpg") 50% 0 / cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus@2x.jpg") 50% 0 / cover no-repeat;
   }
 
   @include vp-1199 {
     background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-tablet.jpg") 50% 0 / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: rgba(2, 102, 193, 0.3) url("../../img/hero/caucasus/hero-caucasus-tablet@2x.jpg") 50% 0 / cover no-repeat;
+      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/caucasus/hero-caucasus-tablet@2x.jpg") 50% 0 / cover no-repeat;
     }
   }
 
@@ -40,17 +40,17 @@
 }
 
 .hero-card-kamchatka {
-  background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka.jpg") 50% 0 / cover no-repeat;
+  background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka.jpg") 50% 0 / cover no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka@2x.jpg") 50% 0 / cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka@2x.jpg") 50% 0 / cover no-repeat;
   }
 
   @include vp-1199 {
     background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-tablet.jpg") 50% 0 / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: rgba(2, 102, 193, 0.3) url("../../img/hero/kamchatka/hero-kamchatka-tablet@2x.jpg") 50% 0 / cover no-repeat;
+      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/kamchatka/hero-kamchatka-tablet@2x.jpg") 50% 0 / cover no-repeat;
     }
   }
 
@@ -64,17 +64,17 @@
 }
 
 .hero-card-altai {
-  background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai.jpg") 50% 0 / cover no-repeat;
+  background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai.jpg") 50% 0 / cover no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai@2x.jpg") 50% 0 / cover no-repeat;
+    background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai@2x.jpg") 50% 0 / cover no-repeat;
   }
 
   @include vp-1199 {
     background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-tablet.jpg") 50% 0 / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: rgba(2, 102, 193, 0.3) url("../../img/hero/altai/hero-altai-tablet@2x.jpg") 50% 0 / cover no-repeat;
+      background: rgba(2, 102, 193, 0.3) url("./../../img/hero/altai/hero-altai-tablet@2x.jpg") 50% 0 / cover no-repeat;
     }
   }
 

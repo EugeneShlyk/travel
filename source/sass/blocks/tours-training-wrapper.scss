@@ -8,14 +8,15 @@
   position: relative;
   width: 100%;
   max-width: 1440px;
-  min-height: 1200px;
   margin: 0 auto;
   padding: 0;
-  //background: url("../../img/tours/tours-background-left.png") -69% 54.5% / 837px 279px no-repeat,
-  //url("../../img/tours/tours-background-right.png") 100% 11% / 602px 1364px no-repeat;
 
   @include vp-1199 {
     width: 768px;
+  }
+
+  @include vp-767 {
+    width: 320px;
   }
 }
 
@@ -26,7 +27,15 @@
   left: -418px;
   width: 837px;
   height: 279px;
-  background: url("../../img/tours/tours-background-left.png") 0 0 / 837px 279px no-repeat,
+  background: url("../../img/tours/tours-background-left.png") 0 0 / 837px 279px no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../../img/tours/tours-background-left@2x.png") 0 0 / 837px 279px no-repeat;
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .tours-training-wrapper__inner::after {
@@ -37,4 +46,26 @@
   width: 602px;
   height: 1364px;
   background: url("../../img/tours/tours-background-right.png") 0 0 / 602px 1364px no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../../img/tours/tours-background-right@2x.png") 0 0 / 602px 1364px no-repeat;
+  }
+
+  @include vp-1199 {
+    top: -95px;
+    right: -308px;
+  }
+
+  @include vp-767 {
+    width: 293px;
+    height: 595px;
+    top: 137px;
+    right: -170px;
+
+    background: url("../../img/tours/tours-background-right-mobile.png") 0 0 / 293px 595px no-repeat;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../../img/tours/tours-background-right-mobile@2x.png") 0 0 / 293px 595px no-repeat;
+  }
 }

@@ -8,7 +8,7 @@ const modal = document.querySelector('.navigation__list');
 const menuLink = document.querySelector('.navigation__list-item-link');
 
 export const toggleMenuHandler = () => {
-  navigationToggle.addEventListener('click', function () {
+  navigationToggle.addEventListener('click', () => {
     if (navigation.classList.contains('navigation--closed')) {
       navigation.classList.remove('navigation--closed');
       navigation.classList.add('navigation--opened');

@@ -1,4 +1,5 @@
 import {workHeroSlider} from './modules/hero-slider.js';
+import {initInstructorsSlider} from './modules/instructors-slider.js';
 import {changePoster} from './modules/poster-video.js';
 import {initToursSlider} from './modules/tours-slider.js';
 import {videoWork} from './modules/video.js';
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     videoWork();
     changePoster();
     toggleMenuHandler();
+    initInstructorsSlider();
   });
 });
 

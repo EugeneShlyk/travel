@@ -62,7 +62,7 @@
           <a class="navigation__list-item-link" href="#tours" aria-label="переход к разделу">Туры</a>
         </li>
         <li class="navigation__list-item">
-          <a class="navigation__list-item-link" href="" aria-label="переход к разделу">Обучение</a>
+          <a class="navigation__list-item-link" href="#training" aria-label="переход к разделу">Обучение</a>
         </li>
         <li class="navigation__list-item">
           <a class="navigation__list-item-link" href="" aria-label="переход к разделу">О нас</a>
@@ -265,9 +265,9 @@
           <div class="tours__header-part">
             <h2>Ближайшие туры</h2>
             <span>Ближайшие туры</span>
-            <div class="tours__header-part-box-button">
+            <div class="tours__header-part-box-button box-button">
               <button
-                class="tours__header-part-button tours__header-part-button--to-left"
+                class="tours__header-part-button tours__header-part-button--to-left button-style"
                 aria-label="прокрутка слайдов влево"
               >
                 <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +278,7 @@
                 </svg>
               </button>
               <button
-                class="tours__header-part-button tours__header-part-button--to-right"
+                class="tours__header-part-button tours__header-part-button--to-right button-style"
                 aria-label="прокрутка слайдов вправо"
               >
                 <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +363,7 @@
                     <div class="tours-card__inner-footer-item">
                       <span>Сложность:</span>
                       <img
-                        src="./img/tours-card/stars/tree-stars.svg"
+                        src="./img/tours-card/stars/two-stars.svg"
                         width="79"
                         height="14"
                         alt="оценка тура, три из пяти."
@@ -481,8 +481,63 @@
 
         </div>
 
-      </div>
+        <div class="training" id="training">
+          <div class="training__inner">
+            <h2 class="training__title">Обучение</h2>
 
+            <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов
+              Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+
+            <section class="instructors">
+              <div class="instructors__header">
+                <h3>Наши инструкторы</h3>
+
+                <div class="instructors__box-button box-button">
+                  <button
+                    class="instructors__button instructors__button--to-left button-style"
+                    aria-label="прокрутка слайдов влево"
+                  >
+                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0.646446 4.85355C0.451184 4.65829 0.451184 4.34171 0.646446 4.14645L3.82843 0.964466C4.02369 0.769204 4.34027 0.769204 4.53553 0.964466C4.7308 1.15973 4.7308 1.47631 4.53553 1.67157L1.70711 4.5L4.53553 7.32843C4.7308 7.52369 4.7308 7.84027 4.53553 8.03553C4.34027 8.2308 4.02369 8.2308 3.82843 8.03553L0.646446 4.85355ZM14 5H1V4H14V5Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    class="instructors__button instructors__button--to-right button-style"
+                    aria-label="прокрутка слайдов вправо"
+                  >
+                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.3536 4.85355C13.5488 4.65829 13.5488 4.34171 13.3536 4.14645L10.1716 0.964466C9.97631 0.769204 9.65973 0.769204 9.46447 0.964466C9.2692 1.15973 9.2692 1.47631 9.46447 1.67157L12.2929 4.5L9.46447 7.32843C9.2692 7.52369 9.2692 7.84027 9.46447 8.03553C9.65973 8.2308 9.97631 8.2308 10.1716 8.03553L13.3536 4.85355ZM0 5H13V4H0V5Z"
+                        fill="white"
+                      />
+                    </svg>
+
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="swiper-container instructors__slider">
+                <div class="swiper-wrapper instructors__slider-inner">
+
+                  <div class="swiper-slide instructors-card">
+                    <div class="instructors-card__image">
+                      <img src="" alt="фото инструктора">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </section>
+
+          </div>
+        </div>
+
+      </div>
 
 
     </div>

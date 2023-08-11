@@ -1,26 +1,48 @@
-.btn {
-  display: inline-flex;
-  padding: 10px 20px;
+.box-button {
+  display: flex;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
 
-  color: $color-default-white;
+.button-style {
+  width: 37px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  background: rgba(2, 102, 193, 1);
+  border: 1px solid rgba(2, 102, 193, 1);
+}
 
-  background-color: $color-neon-blue;
-  border: none;
-  cursor: pointer;
+.button-style {
+  &:hover,
+  &:focus-visible {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(28, 51, 116, 1);
+    outline: none;
+    cursor: pointer;
 
-  transition: opacity $trans-default;
+    path {
+      fill: rgba(28, 51, 116, 1);
+    }
+  }
 
-  &--red {
-    background-color: $color-torch-red;
+  &:active {
+    background: rgba(28, 51, 116, 1);
+
+    path {
+      fill: rgba(255, 255, 255, 1);
+    }
   }
 
   &:disabled {
-    opacity: 0.5;
+    background: rgba(2, 102, 193, 0.1);
+    border: 1px solid rgba(2, 102, 193, 0.1);
+    cursor: auto;
 
-    pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
+    path {
+      fill: rgba(255, 255, 255, 1);
+    }
   }
 }
