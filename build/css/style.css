@@ -2922,7 +2922,7 @@ button,
 }
 
 .tours__slider {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
@@ -3610,6 +3610,10 @@ button,
   }
 }
 
+.instructors__slider {
+  margin-bottom: 47px;
+}
+
 .instructors-card {
   width: 278px;
   height: 377px;
@@ -3707,6 +3711,10 @@ button,
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+}
+
+.instructors-card__middle-box a {
+  height: 24px;
 }
 
 .instructors-card p {
