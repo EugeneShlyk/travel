@@ -1,6 +1,9 @@
 const Swiper = window.Swiper;
+const slider = document.querySelector('.tours__slider');
+
 
 export const initToursSlider = () =>
+  slider &&
   new Swiper('.tours__slider', {
     navigation: {
       nextEl: '.tours__header-part-button--to-right',

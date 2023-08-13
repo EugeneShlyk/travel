@@ -36,5 +36,9 @@
 }
 
 .instructors__slider {
-  margin-bottom: 47px;
+  margin-bottom: 27px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+  }
 }

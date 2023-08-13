@@ -1,0 +1,99 @@
+.comment-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  width: 790px;
+  height: 293px;
+  margin: 0;
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.10);
+  overflow: auto;
+
+  @include vp-1199 {
+    width: 560px;
+    height: 277px;
+    padding: 20px 30px 20px 20px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 290px;
+    height: 466px;
+    padding: 20px;
+  }
+}
+
+.comment-card__image {
+  width: 258px;
+  height: 253px;
+  margin: 0;
+  padding: 0;
+  background: rgba(2, 102, 193, 0.3);
+
+  @include vp-1199 {
+    width: 186px;
+    height: 237px;
+  }
+
+  @include vp-767 {
+    width: 250px;
+    height: 169px;
+  }
+}
+
+.comment-card__text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-card__text p {
+  margin: 12px 0 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  @include vp-1199 {
+    margin: 3px 0 7px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+
+  }
+}
+
+.comment-card__text-inner {
+  margin: auto 0 17px;
+  padding: 0;
+
+  @include vp-1199 {
+    margin-bottom: 2px;
+  }
+}
+
+.comment-card__text-inner span {
+  margin: 0 0 5px;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+.comment-card__text-inner p {
+  margin: 3px 0 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}

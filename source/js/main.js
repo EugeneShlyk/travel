@@ -1,3 +1,4 @@
+import {initCommentsSlider} from './modules/comments-slider.js';
 import {workHeroSlider} from './modules/hero-slider.js';
 import {initInstructorsSlider} from './modules/instructors-slider.js';
 import {changePoster} from './modules/poster-video.js';
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     changePoster();
     toggleMenuHandler();
     initInstructorsSlider();
+    initCommentsSlider();
   });
 });
 

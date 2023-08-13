@@ -1,6 +1,9 @@
 const Swiper = window.Swiper;
+const slider = document.querySelector('.instructors__slider');
+
 
 export const initInstructorsSlider = () =>
+  slider &&
   new Swiper('.instructors__slider', {
     navigation: {
       nextEl: '.instructors__button--to-right',
