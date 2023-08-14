@@ -1,3 +1,4 @@
+import {initAdvantagesSlider} from './modules/advantages-slider.js';
 import {initCommentsSlider} from './modules/comments-slider.js';
 import {workHeroSlider} from './modules/hero-slider.js';
 import {initInstructorsSlider} from './modules/instructors-slider.js';
@@ -35,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleMenuHandler();
     initInstructorsSlider();
     initCommentsSlider();
+    initAdvantagesSlider();
   });
 });
 
