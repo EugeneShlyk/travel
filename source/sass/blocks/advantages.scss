@@ -30,6 +30,10 @@
   width: 1200px;
   margin: 0 auto 50px;
   padding: 0;
+
+  @include vp-1199 {
+    width: 678px;
+  }
 }
 
 .advantages-box-button {

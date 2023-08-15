@@ -4520,6 +4520,11 @@ button,
   margin: 0 auto 50px;
   padding: 0;
 }
+@media (max-width: 1199px) {
+  .advantages__slider-wrapper {
+    width: 678px;
+  }
+}
 
 .advantages-box-button {
   display: inline-block;
