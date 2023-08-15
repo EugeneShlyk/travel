@@ -4269,6 +4269,7 @@ button,
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px 120px 70px;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .comments {
@@ -4361,6 +4362,17 @@ button,
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.comments__slider::before {
+  content: "";
+  position: absolute;
+  top: 282px;
+  left: -465px;
+  z-index: -10;
+  width: 1170px;
+  height: 391px;
+  background: url("./../../img/comments/comments-background.png") 20% 110%/1170px 391px no-repeat;
 }
 
 .comment-card {
@@ -4496,7 +4508,7 @@ button,
   content: "Преимущества";
   position: absolute;
   top: -17px;
-  left: -20px;
+  left: -84px;
   color: rgba(45, 56, 63, 0.03);
   font-size: 55px;
   font-weight: 800;
@@ -4520,19 +4532,34 @@ button,
   width: 380px;
   height: 329px;
   margin: 0;
-  padding: 40px 20px;
+  padding: 0;
   border: 1px solid rgba(2, 102, 193, 0.1);
-  overflow: auto;
 }
 
 .advantages-card__inner {
-  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 249px;
+  margin: 40px 20px;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
-.advantages-card h3 {
-  margin: 0 0 20px;
+.advantages-card__image-wrapper {
+  margin: 0 0 29px;
+  padding: 0;
+}
+
+.advantages-card__inner h3 {
+  margin: 0 0 15px;
   padding: 0;
   font-size: 18px;
   font-weight: 600;
@@ -4542,6 +4569,9 @@ button,
 .advantages-card p {
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 /* @mixin hover-focus {

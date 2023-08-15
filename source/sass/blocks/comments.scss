@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px 120px 70px;
+  position: relative;
 
   @include vp-1199 {
     padding: 14px 45px 50px;
@@ -12,6 +13,17 @@
     padding: 10px 15px 30px;
   }
 }
+
+//.comments::before {
+//  content: "";
+//  position: absolute;
+//  top: 282px;
+//  left: -465px;
+//  width: 1170px;
+//  height: 391px;
+//  background: url("./../../img/comments/comments-background.png") 20% 110% / 1170px 391px no-repeat;
+//  z-index: -1;
+//}
 
 .comments__header {
   display: flex;
@@ -79,4 +91,15 @@
   margin: 0;
   padding: 0;
   align-self: center;
+}
+
+.comments__slider::before {
+  content: "";
+  position: absolute;
+  top: 282px;
+  left: -465px;
+  z-index: -10;
+  width: 1170px;
+  height: 391px;
+  background: url("./../../img/comments/comments-background.png") 20% 110% / 1170px 391px no-repeat;
 }
