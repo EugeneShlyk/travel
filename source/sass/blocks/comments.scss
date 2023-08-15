@@ -39,7 +39,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
     min-height: 35px;
   }
 }
@@ -93,6 +93,10 @@
   align-self: center;
 }
 
+.comments__slider {
+  background: rgba(255, 255, 255, 1);
+}
+
 .comments__slider::before {
   content: "";
   position: absolute;
@@ -102,4 +106,8 @@
   width: 1170px;
   height: 391px;
   background: url("./../../img/comments/comments-background.png") 20% 110% / 1170px 391px no-repeat;
+
+  @include vp-1199 {
+    display: none;
+  }
 }

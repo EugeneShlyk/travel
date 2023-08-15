@@ -3,6 +3,14 @@
   margin: 65px 0 30px;
   padding: 0;
   text-align: center;
+
+  @include vp-1199 {
+    margin: 38px 0 30px;
+  }
+
+  @include vp-767 {
+    margin: 38px 15px 20px;
+  }
 }
 
 .advantages h2 {
@@ -13,6 +21,16 @@
   font-weight: 800;
   line-height: 35px;
   position: relative;
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .advantages h2::after {
@@ -24,6 +42,18 @@
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
+
+  @include vp-1199 {
+    top: -13px;
+    left: -63px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .advantages__slider-wrapper {
@@ -33,10 +63,40 @@
 
   @include vp-1199 {
     width: 678px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    //margin: 0 15px 50px;
+    padding: 0 15px;
+  }
+}
+
+.advantages__slider {
+  @include vp-1199 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    row-gap: 15px;
   }
 }
 
 .advantages-box-button {
   display: inline-block;
   width: fit-content;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
+
+
