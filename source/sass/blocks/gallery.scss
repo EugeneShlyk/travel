@@ -3,6 +3,14 @@
   margin: 0;
   padding: 101px 0 10px;
   overflow: hidden;
+
+  @include vp-1199 {
+    padding: 58px 0 10px;
+  }
+
+  @include vp-767 {
+    padding: 47px 0 10px;
+  }
 }
 
 .gallery__header {
@@ -11,11 +19,20 @@
   column-gap: 100px;
   row-gap: 24px;
   width: 1200px;
-  margin: 0 auto 20px;
+  margin: 0 auto 44px;
   padding: 0;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 0 45px 16px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin-bottom: 0;
+    padding: 0 15px 10px;
+  }
 }
 
 .gallery__header h2 {
@@ -24,6 +41,16 @@
   line-height: 35px;
   margin: 0;
   padding: 0;
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .gallery__header p {
@@ -34,13 +61,33 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: -0.07px;
+
+  @include vp-1199 {
+    padding-right: 109px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    grid-column: auto;
+    grid-row: auto;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .gallery__box-button {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   align-self: center;
+  margin-bottom: 4px;
+
+  @include vp-767 {
+    grid-row: auto;
+    grid-column: auto;
+    justify-self: end;
+  }
 }
 
 .gallery__button{
@@ -59,12 +106,17 @@
   grid-template-columns: auto auto;
   flex-direction: column;
   gap: 5px;
-  width: fit-content;
-  height: auto;
+  //width: fit-content;
+  //height: auto;
+  width: auto;
+
+  @include vp-767 {
+    gap: 3px;
+  }
 }
 
 .gallery__card-inner {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
 }
