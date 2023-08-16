@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0;
   padding: 101px 0 10px;
+  overflow: hidden;
 }
 
 .gallery__header {
@@ -51,4 +52,19 @@
 .gallery__slider-wrapper {
   width: 100%;
   max-width: 1440px;
+}
+
+.gallery__card {
+  display: grid;
+  grid-template-columns: auto auto;
+  flex-direction: column;
+  gap: 5px;
+  width: fit-content;
+  height: auto;
+}
+
+.gallery__card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

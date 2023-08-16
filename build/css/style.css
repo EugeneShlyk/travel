@@ -4990,6 +4990,7 @@ button,
   width: 100%;
   margin: 0;
   padding: 101px 0 10px;
+  overflow: hidden;
 }
 
 .gallery__header {
@@ -5058,6 +5059,33 @@ button,
 .gallery__slider-wrapper {
   width: 100%;
   max-width: 1440px;
+}
+
+.gallery__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
+
+.gallery__card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
 }
 
 /* @mixin hover-focus {
