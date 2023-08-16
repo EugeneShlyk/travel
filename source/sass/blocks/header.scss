@@ -29,7 +29,7 @@
 }
 
 .header__navigation-closed .header__logo-link {
-  picture:last-child{
+  picture:last-child {
     display: none;
   }
 }
@@ -115,13 +115,7 @@
     font-size: 14px;
     line-height: 14px;
   }
-}
 
-.header__navigation-opened .header__phone {
-  color: rgba(45, 56, 63, 1);
-}
-
-.header__phone {
   &:hover,
   &:focus-visible {
     color: rgba(28, 51, 116, 1);
@@ -131,4 +125,8 @@
   &:active {
     color: rgba(2, 102, 193, 1);
   }
+}
+
+.header__navigation-opened .header__phone {
+  color: rgba(45, 56, 63, 1);
 }

@@ -215,9 +215,7 @@
     padding: 17px 33px;
     margin-bottom: 10px;
   }
-}
 
-.hero-card__inner-container-link {
   &:hover,
   &:focus-visible {
     color: rgba(28, 51, 116, 1);
@@ -281,7 +279,7 @@
   margin: 0;
   padding: 0;
 
-  @include vp-1199{
+  @include vp-1199 {
     position: relative;
     top: 0;
     width: 442px;
@@ -318,9 +316,11 @@
   circle {
     stroke: rgba(28, 51, 116, 1);
   }
+
   path {
     stroke: rgba(0, 0, 0, 1);
   }
+
   cursor: pointer;
 }
 
@@ -329,6 +329,7 @@
     stroke: rgba(28, 51, 116, 1);
     fill: rgba(28, 51, 116, 1);
   }
+
   path {
     stroke: rgba(255, 255, 255, 1);
   }
@@ -338,6 +339,7 @@
   circle {
     stroke: rgba(2, 102, 193, 0.1);
   }
+
   path {
     stroke: rgba(2, 102, 193, 0.1);
     fill: rgba(2, 102, 193, 0.1);

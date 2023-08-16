@@ -186,11 +186,11 @@
     left: 0;
   }
 }
+
 .learning-process__item:nth-child(4n+1):not(:last-child)::before,
 .learning-process__item:nth-child(4n+2):not(:last-child)::before,
 .learning-process__item:nth-child(4n+3):not(:last-child)::before,
 .learning-process__item:nth-child(4n+4):not(:last-child)::before {
-
   @include vp-767 {
     top: 35px;
     left: 10px;
@@ -199,8 +199,7 @@
   }
 }
 
-.learning-process__item:last-child:before {
-
+.learning-process__item:last-child::before {
   @include vp-767 {
     display: none;
   }

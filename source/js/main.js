@@ -1,5 +1,6 @@
 import {initAdvantagesSlider} from './modules/advantages-slider.js';
 import {initCommentsSlider} from './modules/comments-slider.js';
+import {initGallerySlider} from './modules/gallery-slider.js';
 import {workHeroSlider} from './modules/hero-slider.js';
 import {initInstructorsSlider} from './modules/instructors-slider.js';
 import {changePoster} from './modules/poster-video.js';
@@ -37,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initInstructorsSlider();
     initCommentsSlider();
     initAdvantagesSlider();
+    initGallerySlider();
   });
 });
 
