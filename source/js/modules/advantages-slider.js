@@ -6,8 +6,8 @@ export const initAdvantagesSlider = () =>
   window.matchMedia('(min-width: 1200px)').matches && slider &&
   new Swiper('.advantages__slider-wrapper', {
     navigation: {
-      nextEl: '.advantages-button--to-right',
-      prevEl: '.advantages-button--to-left',
+      nextEl: '.advantages__button--to-right',
+      prevEl: '.advantages__button--to-left',
     },
     simulateTouch: false,
     breakpoints: {

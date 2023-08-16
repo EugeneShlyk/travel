@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 10px 120px 70px;
+  padding: 10px 120px 71px;
   position: relative;
 
   @include vp-1199 {
@@ -14,23 +14,12 @@
   }
 }
 
-//.comments::before {
-//  content: "";
-//  position: absolute;
-//  top: 282px;
-//  left: -465px;
-//  width: 1170px;
-//  height: 391px;
-//  background: url("./../../img/comments/comments-background.png") 20% 110% / 1170px 391px no-repeat;
-//  z-index: -1;
-//}
-
 .comments__header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   min-height: 55px;
-  margin: 0 0 30px;
+  margin: 0 0 29px;
   padding: 0;
 
   @include vp-1199 {
