@@ -1641,9 +1641,12 @@
 
     <section class="form">
       <div class="form__inner">
-        <h2>Остались вопросы?</h2>
 
-        <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+        <div class="form__inner-text">
+          <h2>Остались вопросы?</h2>
+
+          <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+        </div>
 
         <div class="form__inner-form" data-form-validate="data-form-validate" data-callback="base">
           <form action="https://echo.htmlacademy.ru/." id="form" method="get">
@@ -1652,7 +1655,6 @@
                 class="custom-input"
                 data-validate-type="text"
                 data-limitation="name"
-                data-message-base="Поле обязательно к заполнению"
                 data-required="data-required"
               >
                 <label>
@@ -1660,7 +1662,7 @@
                     type="text"
                     name="user-name"
                     id="user-name"
-                    placeholder="Имя"
+                    placeholder="Как к&nbsp;вам обращаться?"
                     aria-label="поле ввода вашего имени"
                   >
                 </label>
@@ -1670,8 +1672,6 @@
                 class="custom-input"
                 data-validate-type="phone"
                 data-on-input-validate="data-on-input-validate"
-                data-message-base="Поле обязательно к заполнению"
-                data-message-success="Поле заполнено верно"
                 data-required="data-required"
               >
                 <label>
@@ -1684,6 +1684,9 @@
                   >
                 </label>
               </div>
+
+              <button class="form__button" type="submit">Отправить</button>
+
             </div>
 
 
@@ -1693,105 +1696,126 @@
       </div>
     </section>
 
-  </main>
+    <section class="contacts">
+      <div class="contacts__inner">
+        <h2>Контакты</h2>
 
-  <!--  <footer class="footer">-->
-  <!--    <div class="footer__inner">-->
-  <!--      <a class="footer__logo" href="#" aria-label="на главную страницу сайта">-->
-  <!--        <picture>-->
-  <!--          <source-->
-  <!--            media="(max-width: 767px)"-->
-  <!--            srcset="./img/footer/footer-logo-mobile.svg"-->
-  <!--            width="112"-->
-  <!--            height="34"-->
-  <!--          >-->
-  <!--          <source-->
-  <!--            media="(max-width: 1199px)"-->
-  <!--            width="118"-->
-  <!--            height="34"-->
-  <!--            srcset="./img/footer/footer-logo-tablet.svg"-->
-  <!--          >-->
-  <!--          <img-->
-  <!--            src="./img/footer/footer-logo.svg"-->
-  <!--            width="205"-->
-  <!--            height="60"-->
-  <!--            alt="логотип сайта"-->
-  <!--          >-->
-  <!--        </picture>-->
-  <!--      </a>-->
+        <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем
+          рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
 
-  <!--      <ol class="footer-list">-->
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#tours">Туры</a>-->
-  <!--        </li>-->
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#training">Обучение</a>-->
-  <!--        </li>-->
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#about-us">О нас</a>-->
-  <!--        </li>-->
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#comments">Отзывы</a>-->
-  <!--        </li>-->
+        <div class="contacts__map-wrapper">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.638577%2C55.816514&mode=poi&poi%5Bpoint%5D=37.637724%2C55.816619&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1773709440&z=16.8"
+            class="contacts__map"
+          ></iframe>
+        </div>
+      </div>
+</div>
+</section>
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="">Фотографии</a>-->
-  <!--        </li>-->
+</main>
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="">Контакты</a>-->
-  <!--        </li>-->
+<!--  <footer class="footer">-->
+<!--    <div class="footer__inner">-->
+<!--      <a class="footer__logo" href="#" aria-label="на главную страницу сайта">-->
+<!--        <picture>-->
+<!--          <source-->
+<!--            media="(max-width: 767px)"-->
+<!--            srcset="./img/footer/footer-logo-mobile.svg"-->
+<!--            width="112"-->
+<!--            height="34"-->
+<!--          >-->
+<!--          <source-->
+<!--            media="(max-width: 1199px)"-->
+<!--            width="118"-->
+<!--            height="34"-->
+<!--            srcset="./img/footer/footer-logo-tablet.svg"-->
+<!--          >-->
+<!--          <img-->
+<!--            src="./img/footer/footer-logo.svg"-->
+<!--            width="205"-->
+<!--            height="60"-->
+<!--            alt="логотип сайта"-->
+<!--          >-->
+<!--        </picture>-->
+<!--      </a>-->
 
-  <!--      </ol>-->
+<!--      <ol class="footer-list">-->
 
-  <!--      <a class="footer__phone-link" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>-->
+<!--        <li class="footer-list__item">-->
+<!--          <a class="footer-list__item-link" href="#tours">Туры</a>-->
+<!--        </li>-->
 
-  <!--      <ul class="footer__social">-->
-  <!--        <li class="footer__social-item">-->
-  <!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
-  <!--            <svg-->
-  <!--              width="16"-->
-  <!--              height="9"-->
-  <!--              aria-hidden="true"-->
-  <!--            >-->
-  <!--              <use href="img/sprite.svg#vk-footer"></use>-->
-  <!--            </svg>-->
-  <!--          </a>-->
-  <!--        </li>-->
+<!--        <li class="footer-list__item">-->
+<!--          <a class="footer-list__item-link" href="#training">Обучение</a>-->
+<!--        </li>-->
 
-  <!--        <li class="footer__social-item">-->
-  <!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в одноклассники">-->
-  <!--            <svg-->
-  <!--              width="9"-->
-  <!--              height="16"-->
-  <!--              aria-hidden="true"-->
-  <!--            >-->
-  <!--              <use href="img/sprite.svg#ok"></use>-->
-  <!--            </svg>-->
-  <!--          </a>-->
-  <!--        </li>-->
+<!--        <li class="footer-list__item">-->
+<!--          <a class="footer-list__item-link" href="#about-us">О нас</a>-->
+<!--        </li>-->
 
-  <!--        <li class="footer__social-item">-->
-  <!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
-  <!--            <svg-->
-  <!--              width="14"-->
-  <!--              height="15"-->
-  <!--              aria-hidden="true"-->
-  <!--            >-->
-  <!--              <use href="img/sprite.svg#Reddit"></use>-->
-  <!--            </svg>-->
-  <!--          </a>-->
-  <!--        </li>-->
-  <!--      </ul>-->
+<!--        <li class="footer-list__item">-->
+<!--          <a class="footer-list__item-link" href="#comments">Отзывы</a>-->
+<!--        </li>-->
 
-  <!--      <span>Политика конфиденциальности</span>-->
+<!--        <li class="footer-list__item">-->
+<!--          <a class="footer-list__item-link" href="">Фотографии</a>-->
+<!--        </li>-->
 
-  <!--    </div>-->
-  <!--  </footer>-->
+<!--        <li class="footer-list__item">-->
+<!--          <a class="footer-list__item-link" href="">Контакты</a>-->
+<!--        </li>-->
+
+<!--      </ol>-->
+
+<!--      <a class="footer__phone-link" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>-->
+
+<!--      <ul class="footer__social">-->
+<!--        <li class="footer__social-item">-->
+<!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
+<!--            <svg-->
+<!--              width="16"-->
+<!--              height="9"-->
+<!--              aria-hidden="true"-->
+<!--            >-->
+<!--              <use href="img/sprite.svg#vk-footer"></use>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--        </li>-->
+
+<!--        <li class="footer__social-item">-->
+<!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в одноклассники">-->
+<!--            <svg-->
+<!--              width="9"-->
+<!--              height="16"-->
+<!--              aria-hidden="true"-->
+<!--            >-->
+<!--              <use href="img/sprite.svg#ok"></use>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--        </li>-->
+
+<!--        <li class="footer__social-item">-->
+<!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
+<!--            <svg-->
+<!--              width="14"-->
+<!--              height="15"-->
+<!--              aria-hidden="true"-->
+<!--            >-->
+<!--              <use href="img/sprite.svg#Reddit"></use>-->
+<!--            </svg>-->
+<!--          </a>-->
+<!--        </li>-->
+<!--      </ul>-->
+
+<!--      <span>Политика конфиденциальности</span>-->
+
+<!--    </div>-->
+<!--  </footer>-->
 
 </div>
 
