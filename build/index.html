@@ -1685,7 +1685,8 @@
                 </label>
               </div>
 
-              <button class="form__button" type="submit">Отправить</button>
+              <button class="form__button" type="submit" aria-label="отправить заявку на обратную связь">Отправить
+              </button>
 
             </div>
 
@@ -1703,116 +1704,156 @@
         <p>Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем
           рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
 
+        <ul class="contacts__list">
+          <li class="contacts__list-item">
+            <img
+              src="./img/contacts/contacts-phone.svg"
+              width="26"
+              height="26"
+              alt="телефонная трубка"
+            >
+
+            <span>Телефон</span>
+
+            <p>8&nbsp;983&nbsp;745 45&nbsp;45</p>
+          </li>
+
+          <li class="contacts__list-item">
+            <img
+              src="./img/contacts/contacts-mail.svg"
+              width="26"
+              height="26"
+              alt="конверт"
+            >
+
+            <span>E-mail</span>
+
+            <p>info@lifetour.com</p>
+          </li>
+
+          <li class="contacts__list-item">
+            <img
+              src="./img/contacts/contacts-address.svg"
+              width="26"
+              height="26"
+              alt="локация"
+            >
+
+            <span>Адрес</span>
+
+            <p>г. Москва, пр-т Мира, д.&nbsp;14, офис 101</p>
+          </li>
+        </ul>
+
         <div class="contacts__map-wrapper">
           <iframe
             class="contacts__map"
-
+            src="https://yandex.ru/map-widget/v1/?ll=37.638577%2C55.816514&mode=poi&poi%5Bpoint%5D=37.637724%2C55.816619&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1773709440&z=16.8"
           ></iframe>
 
-          <!--            src="https://yandex.ru/map-widget/v1/?ll=37.638577%2C55.816514&mode=poi&poi%5Bpoint%5D=37.637724%2C55.816619&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1773709440&z=16.8"-->
         </div>
       </div>
     </section>
 
   </main>
 
-  <!--  <footer class="footer">-->
-  <!--    <div class="footer__inner">-->
-  <!--      <a class="footer__logo" href="#" aria-label="на главную страницу сайта">-->
-  <!--        <picture>-->
-  <!--          <source-->
-  <!--            media="(max-width: 767px)"-->
-  <!--            srcset="./img/footer/footer-logo-mobile.svg"-->
-  <!--            width="112"-->
-  <!--            height="34"-->
-  <!--          >-->
-  <!--          <source-->
-  <!--            media="(max-width: 1199px)"-->
-  <!--            width="118"-->
-  <!--            height="34"-->
-  <!--            srcset="./img/footer/footer-logo-tablet.svg"-->
-  <!--          >-->
-  <!--          <img-->
-  <!--            src="./img/footer/footer-logo.svg"-->
-  <!--            width="205"-->
-  <!--            height="60"-->
-  <!--            alt="логотип сайта"-->
-  <!--          >-->
-  <!--        </picture>-->
-  <!--      </a>-->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="footer__logo" href="#" aria-label="на главную страницу сайта">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/footer/footer-logo-mobile.svg"
+            width="112"
+            height="34"
+          >
+          <source
+            media="(max-width: 1199px)"
+            width="118"
+            height="34"
+            srcset="./img/footer/footer-logo-tablet.svg"
+          >
+          <img
+            src="./img/footer/footer-logo.svg"
+            width="205"
+            height="60"
+            alt="логотип сайта"
+          >
+        </picture>
+      </a>
 
-  <!--      <ol class="footer-list">-->
+      <ol class="footer-list">
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#tours">Туры</a>-->
-  <!--        </li>-->
+        <li class="footer-list__item">
+          <a class="footer-list__item-link" href="#tours">Туры</a>
+        </li>
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#training">Обучение</a>-->
-  <!--        </li>-->
+        <li class="footer-list__item">
+          <a class="footer-list__item-link" href="#training">Обучение</a>
+        </li>
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#about-us">О нас</a>-->
-  <!--        </li>-->
+        <li class="footer-list__item">
+          <a class="footer-list__item-link" href="#about-us">О нас</a>
+        </li>
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="#comments">Отзывы</a>-->
-  <!--        </li>-->
+        <li class="footer-list__item">
+          <a class="footer-list__item-link" href="#comments">Отзывы</a>
+        </li>
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="">Фотографии</a>-->
-  <!--        </li>-->
+        <li class="footer-list__item">
+          <a class="footer-list__item-link" href="">Фотографии</a>
+        </li>
 
-  <!--        <li class="footer-list__item">-->
-  <!--          <a class="footer-list__item-link" href="">Контакты</a>-->
-  <!--        </li>-->
+        <li class="footer-list__item">
+          <a class="footer-list__item-link" href="">Контакты</a>
+        </li>
 
-  <!--      </ol>-->
+      </ol>
 
-  <!--      <a class="footer__phone-link" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>-->
+      <a class="footer__phone-link" href="tel:+78007253232" aria-label="наш телефон">8 800 725 32 32</a>
 
-  <!--      <ul class="footer__social">-->
-  <!--        <li class="footer__social-item">-->
-  <!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
-  <!--            <svg-->
-  <!--              width="16"-->
-  <!--              height="9"-->
-  <!--              aria-hidden="true"-->
-  <!--            >-->
-  <!--              <use href="img/sprite.svg#vk-footer"></use>-->
-  <!--            </svg>-->
-  <!--          </a>-->
-  <!--        </li>-->
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">
+            <svg
+              width="16"
+              height="9"
+              aria-hidden="true"
+            >
+              <use href="img/sprite.svg#vk-footer"></use>
+            </svg>
+          </a>
+        </li>
 
-  <!--        <li class="footer__social-item">-->
-  <!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в одноклассники">-->
-  <!--            <svg-->
-  <!--              width="9"-->
-  <!--              height="16"-->
-  <!--              aria-hidden="true"-->
-  <!--            >-->
-  <!--              <use href="img/sprite.svg#ok"></use>-->
-  <!--            </svg>-->
-  <!--          </a>-->
-  <!--        </li>-->
+        <li class="footer__social-item">
+          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в одноклассники">
+            <svg
+              width="9"
+              height="16"
+              aria-hidden="true"
+            >
+              <use href="img/sprite.svg#ok"></use>
+            </svg>
+          </a>
+        </li>
 
-  <!--        <li class="footer__social-item">-->
-  <!--          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">-->
-  <!--            <svg-->
-  <!--              width="14"-->
-  <!--              height="15"-->
-  <!--              aria-hidden="true"-->
-  <!--            >-->
-  <!--              <use href="img/sprite.svg#Reddit"></use>-->
-  <!--            </svg>-->
-  <!--          </a>-->
-  <!--        </li>-->
-  <!--      </ul>-->
+        <li class="footer__social-item">
+          <a class="footer__social-item-link" href="#" aria-label="переход на страницу сайта в контакте">
+            <svg
+              width="14"
+              height="15"
+              aria-hidden="true"
+            >
+              <use href="img/sprite.svg#Reddit"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-  <!--      <span>Политика конфиденциальности</span>-->
+      <span>Политика конфиденциальности</span>
 
-  <!--    </div>-->
-  <!--  </footer>-->
+    </div>
+  </footer>
 
 </div>
 
