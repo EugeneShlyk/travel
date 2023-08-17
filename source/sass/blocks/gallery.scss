@@ -1,15 +1,15 @@
 .gallery {
   width: 100%;
   margin: 0;
-  padding: 101px 0 10px;
+  padding: 101px 0 0;
   overflow: hidden;
 
   @include vp-1199 {
-    padding: 58px 0 10px;
+    padding-top: 58px;
   }
 
   @include vp-767 {
-    padding: 47px 0 10px;
+    padding-top: 47px;
   }
 }
 
@@ -24,6 +24,7 @@
 
   @include vp-1199 {
     width: 100%;
+    margin-bottom: 20px;
     padding: 0 45px 16px;
   }
 
@@ -41,6 +42,7 @@
   line-height: 35px;
   margin: 0;
   padding: 0;
+  position: relative;
 
   @include vp-1199 {
     font-size: 25px;
@@ -50,6 +52,29 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
+  }
+}
+
+.gallery__header h2::after {
+  content: "Фотогалерея";
+  position: absolute;
+  top: -17px;
+  left: 0;
+  color: rgba(45, 56, 63, 0.03);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+
+  @include vp-1199 {
+    top: -14px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    top: -4px;
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
@@ -90,7 +115,7 @@
   }
 }
 
-.gallery__button{
+.gallery__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,21 +127,46 @@
 }
 
 .gallery__card {
+  width: auto;
+  overflow: hidden;
+}
+
+.gallery__card-container {
   display: grid;
   grid-template-columns: auto auto;
-  flex-direction: column;
   gap: 5px;
-  //width: fit-content;
-  //height: auto;
-  width: auto;
 
   @include vp-767 {
+    height: 260px;
     gap: 3px;
   }
+}
+
+.gallery__card-container-big-photo {
+  @include vp-767 {
+    width: 158px;
+    height: 260px;
+  }
+}
+
+.gallery__card-container-big-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .gallery__card-inner {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 5px;
+
+  @include vp-767 {
+    width: 171px;
+    gap: 3px;
+  }
+}
+
+.gallery__card-container-margin {
+  margin-top: 200px;
+  width: 200px;
 }
