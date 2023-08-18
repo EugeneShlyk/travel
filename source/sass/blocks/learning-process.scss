@@ -140,14 +140,6 @@
   }
 }
 
-.learning-process__item:nth-child(4n+1)::before {
-  @include vp-1199 {
-    width: 109%;
-    bottom: -15px;
-    left: 0;
-  }
-}
-
 .learning-process__item::before {
   content: "";
   position: absolute;
@@ -156,6 +148,14 @@
   width: 10000%;
   height: 1px;
   background: rgba(2, 102, 193, 0.2);
+}
+
+.learning-process__item:nth-child(4n+1)::before {
+  @include vp-1199 {
+    width: 109%;
+    bottom: -15px;
+    left: 0;
+  }
 }
 
 .learning-process__item:nth-child(4n+2)::before {

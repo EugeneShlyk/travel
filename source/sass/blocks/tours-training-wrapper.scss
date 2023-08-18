@@ -25,15 +25,15 @@
   }
 
   @include vp-767 {
-    width: 293px;
+    width: 346px;
     height: 595px;
     top: 137px;
     right: -170px;
 
-    background: url("../../img/tours/tours-background-right-mobile.png") 0 0 / 293px 595px no-repeat;
+    background: url("../../img/tours/tours-background-right-mobile.png") 0 0 / 346px 595px no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/tours/tours-background-right-mobile@2x.png") 0 0 / 293px 595px no-repeat;
+      background: url("../../img/tours/tours-background-right-mobile@2x.png") 0 0 / 346px 595px no-repeat;
     }
   }
 }

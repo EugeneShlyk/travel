@@ -29,6 +29,7 @@
 
   @include vp-767 {
     gap: 11px;
+    width: 100%;
   }
 }
 
@@ -85,7 +86,7 @@
 
   @include vp-1199 {
     margin-bottom: 22px;
-    width: 72%;
+    width: 71%;
   }
 
   @include vp-767 {
@@ -111,7 +112,7 @@
   }
 
   @include vp-767 {
-    width: 290px;
+    width: 100%;
     height: 320px;
     margin-top: 16px;
   }
@@ -146,7 +147,7 @@
   @include vp-1199 {
     grid-row: auto;
     flex-direction: row;
-    gap: 39px;
+    gap: 42px;
     margin-bottom: 2px;
   }
 
