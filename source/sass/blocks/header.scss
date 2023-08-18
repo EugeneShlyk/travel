@@ -28,13 +28,13 @@
   }
 }
 
-.header__navigation-closed .header__logo-link {
+.header--navigation-closed .header__logo-link {
   picture:last-child {
     display: none;
   }
 }
 
-.header__navigation-opened .header__logo-link {
+.header--navigation-opened .header__logo-link {
   picture:first-child {
     display: none;
   }
@@ -84,13 +84,13 @@
   }
 }
 
-.header__navigation-closed .header__button-menu {
+.header--navigation-closed .header__button-menu {
   svg:last-child {
     display: none;
   }
 }
 
-.header__navigation-opened .header__button-menu svg:first-child {
+.header--navigation-opened .header__button-menu svg:first-child {
   display: none;
 }
 
@@ -127,6 +127,6 @@
   }
 }
 
-.header__navigation-opened .header__phone {
+.header--navigation-opened .header__phone {
   color: rgba(45, 56, 63, 1);
 }

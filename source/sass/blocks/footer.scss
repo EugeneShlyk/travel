@@ -16,7 +16,6 @@
 .footer__inner {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  align-items: center;
   column-gap: 99px;
   row-gap: 16px;
   width: 1200px;
@@ -45,6 +44,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+  align-self: center;
 
   @include vp-1199 {
     display: none;

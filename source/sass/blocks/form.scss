@@ -13,6 +13,7 @@
 
   @include vp-1199 {
     background: url("../../img/form/questions-background.jpg") 61% 51% / 1440px 800px no-repeat;
+
     @media (min-resolution: $retina-dppx) {
       background: url("../../img/form/questions-background@2x.jpg") 61% 51% / 1440px 800px no-repeat;
     }
@@ -131,7 +132,7 @@
   }
 }
 
-.form__button{
+.form__button {
   margin: 0;
   padding: 21px 0;
   color: rgba(255, 255, 255, 1);

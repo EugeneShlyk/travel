@@ -2242,14 +2242,14 @@ button,
   }
 }
 
-.header__navigation-closed .header__logo-link picture:last-child {
+.header--navigation-closed .header__logo-link picture:last-child {
   display: none;
 }
 
-.header__navigation-opened .header__logo-link picture:first-child {
+.header--navigation-opened .header__logo-link picture:first-child {
   display: none;
 }
-.header__navigation-opened .header__logo-link picture:last-child {
+.header--navigation-opened .header__logo-link picture:last-child {
   display: block;
 }
 
@@ -2294,11 +2294,11 @@ button,
   }
 }
 
-.header__navigation-closed .header__button-menu svg:last-child {
+.header--navigation-closed .header__button-menu svg:last-child {
   display: none;
 }
 
-.header__navigation-opened .header__button-menu svg:first-child {
+.header--navigation-opened .header__button-menu svg:first-child {
   display: none;
 }
 
@@ -2337,7 +2337,7 @@ button,
   color: rgb(2, 102, 193);
 }
 
-.header__navigation-opened .header__phone {
+.header--navigation-opened .header__phone {
   color: rgb(45, 56, 63);
 }
 
@@ -2364,18 +2364,18 @@ button,
   }
 }
 @media (max-width: 1199px) {
-  .header__navigation-closed .navigation {
+  .header--navigation-closed .navigation {
     display: none;
   }
 }
-.header__navigation-opened .navigation__list-item-link {
+.header--navigation-opened .navigation__list-item-link {
   font-weight: 700;
   letter-spacing: 0.64px;
   text-transform: uppercase;
   color: rgb(45, 56, 63);
 }
 @media (max-width: 767px) {
-  .header__navigation-opened .navigation__list-item-link {
+  .header--navigation-opened .navigation__list-item-link {
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
@@ -2386,7 +2386,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 28px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 616px;
@@ -2449,7 +2449,7 @@ button,
   border: 1px solid transparent;
 }
 
-.header__navigation-opened .navigation__list-item-link:active {
+.header--navigation-opened .navigation__list-item-link:active {
   color: rgb(2, 102, 193);
 }
 
@@ -2566,9 +2566,14 @@ button,
 .hero-card__inner {
   margin: 0 auto;
   padding: 0;
-  background: rgba(15, 20, 41, 0.2);
+  background: rgba(15, 20, 41, 0.2) url("./../../img/hero/overlay-hero.png") 50% 0/1440px 800px no-repeat;
 }
 @media (max-width: 1199px) {
+  .hero-card__inner {
+    background: rgba(15, 20, 41, 0.2) url("./../../img/hero/overlay-hero-tablet.png") 50% 0/100% 904px no-repeat;
+  }
+}
+@media (max-width: 767px) {
   .hero-card__inner {
     background: rgba(15, 20, 41, 0.1);
   }
@@ -2865,9 +2870,6 @@ button,
   display: grid;
   -ms-grid-columns: (auto)[3];
   grid-template-columns: repeat(3, auto);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-column-gap: 99px;
      -moz-column-gap: 99px;
           column-gap: 99px;
@@ -2905,6 +2907,9 @@ button,
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 @media (max-width: 1199px) {
   .footer__phone-link {
@@ -3419,9 +3424,6 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 12px;
   margin: 0;
   padding: 0;
@@ -3447,6 +3449,9 @@ button,
   font-weight: 500;
   line-height: 12px;
   text-align: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 @media (max-width: 767px) {
   .tours-card__duration span {
@@ -4119,8 +4124,8 @@ button,
   content: "";
   position: absolute;
   bottom: -34px;
-  left: -200%;
-  width: 1000%;
+  left: -1000%;
+  width: 10000%;
   height: 1px;
   background: rgba(2, 102, 193, 0.2);
 }
@@ -4965,6 +4970,9 @@ button,
   margin: 3px 0 0 0;
   padding: 0;
   list-style: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 @media (max-width: 1199px) {
   .footer-list {
@@ -5451,7 +5459,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 17px;
-    width: 100%;
+    width: 678px;
   }
 }
 @media (max-width: 767px) {

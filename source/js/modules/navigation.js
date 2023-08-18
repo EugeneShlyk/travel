@@ -10,9 +10,9 @@ export const toggleMenuHandler = () => {
   menuLinks.forEach((link) => link.addEventListener('click', closeModal));
 
   navigationToggle.addEventListener('click', () => {
-    if (header.classList.contains('header__navigation-closed')) {
-      header.classList.remove('header__navigation-closed');
-      header.classList.add('header__navigation-opened');
+    if (header.classList.contains('header--navigation-closed')) {
+      header.classList.remove('header--navigation-closed');
+      header.classList.add('header--navigation-opened');
       body.classList.add('opened-menu');
       document.addEventListener('click', onOverlayClick);
     } else {
@@ -23,8 +23,8 @@ export const toggleMenuHandler = () => {
 };
 
 const closeModal = () => {
-  header.classList.add('header__navigation-closed');
-  header.classList.remove('header__navigation-opened');
+  header.classList.add('header--navigation-closed');
+  header.classList.remove('header--navigation-opened');
   body.classList.remove('opened-menu');
 };
 

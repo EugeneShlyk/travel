@@ -21,12 +21,12 @@
 }
 
 @include vp-1199 {
-  .header__navigation-closed .navigation {
+  .header--navigation-closed .navigation {
     display: none;
   }
 }
 
-.header__navigation-opened .navigation__list-item-link {
+.header--navigation-opened .navigation__list-item-link {
   font-weight: 700;
   letter-spacing: 0.64px;
   text-transform: uppercase;
@@ -41,7 +41,7 @@
 
 .navigation__list {
   display: flex;
-  gap: 30px;
+  gap: 28px;
   flex-wrap: wrap;
   max-width: 616px;
   margin: 0;
@@ -99,7 +99,7 @@
   }
 }
 
-.header__navigation-opened .navigation__list-item-link:active {
+.header--navigation-opened .navigation__list-item-link:active {
   color: rgba(2, 102, 193, 1);
 }
 

@@ -90,9 +90,13 @@
 .hero-card__inner {
   margin: 0 auto;
   padding: 0;
-  background: rgba(15, 20, 41, 0.2);
+  background: rgba(15, 20, 41, 0.2) url("./../../img/hero/overlay-hero.png") 50% 0 / 1440px 800px no-repeat;
 
   @include vp-1199 {
+    background: rgba(15, 20, 41, 0.2) url("./../../img/hero/overlay-hero-tablet.png") 50% 0 / 100% 904px no-repeat;
+  }
+
+  @include vp-767 {
     background: rgba(15, 20, 41, 0.1);
   }
 }
