@@ -50,24 +50,24 @@
   }
 }
 
-.tours__header-part span {
+.tours__header-part h2::after {
+  content: attr(data-title);
   position: absolute;
-  bottom: -3px;
+  top: -17px;
   left: 0;
-  width: fit-content;
   color: rgba(45, 56, 63, 0.03);
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
-  z-index: 1;
 
   @include vp-1199 {
-    bottom: 2px;
+    top: -9px;
     font-size: 40px;
     line-height: 40px;
   }
 
   @include vp-767 {
+    top: -4px;
     font-size: 26px;
     line-height: 26px;
   }
