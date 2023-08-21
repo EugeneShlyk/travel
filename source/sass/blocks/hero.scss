@@ -6,18 +6,14 @@
 
 .hero__inner {
   position: relative;
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
 
-  @media (max-width: 1439px) {
-    width: 100%;
-  }
-
-  @include vp-1199 {
-    width: 768px;
-  }
+  //@include vp-1199 {
+  //  width: 768px;
+  //}
 
   @include vp-767 {
     width: 320px;

@@ -97,7 +97,7 @@
 }
 
 .about-us__inner h2::after {
-  content: "О нас";
+  content: attr(data-title);
   position: absolute;
   top: -17px;
   left: 0;
@@ -113,6 +113,7 @@
   }
 
   @include vp-767 {
+    top: -4px;
     font-size: 26px;
     line-height: 26px;
   }

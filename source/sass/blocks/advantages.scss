@@ -35,7 +35,7 @@
 }
 
 .advantages h2::after {
-  content: "Преимущества";
+  content: attr(data-title);
   position: absolute;
   top: -17px;
   left: -84px;

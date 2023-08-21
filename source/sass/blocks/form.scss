@@ -19,11 +19,11 @@
     }
   }
 
-  @media (max-width: 320px) {
-    background: url("../../img/form/questions-background-mobile.jpg") 50% 0 / 320px 621px no-repeat;
+  @include vp-767 {
+    background: url("../../img/form/questions-background-mobile.jpg") 50% 0 / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/form/questions-background-mobile@2x.jpg") 50% 0 / 320px 621px no-repeat;
+      background: url("../../img/form/questions-background-mobile@2x.jpg") 50% 0 / cover no-repeat;
     }
   }
 

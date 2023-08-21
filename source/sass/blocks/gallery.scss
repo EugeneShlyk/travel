@@ -56,7 +56,7 @@
 }
 
 .gallery__header h2::after {
-  content: "Фотогалерея";
+  content: attr(data-title);
   position: absolute;
   top: -17px;
   left: 0;

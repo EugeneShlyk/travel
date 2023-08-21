@@ -116,28 +116,8 @@
   }
 }
 
-.learning-process__item:nth-child(4) {
-  @include vp-1199 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-
-  @include vp-767 {
-    grid-column: auto;
-    grid-row: auto;
-  }
-}
-
-.learning-process__item:nth-child(8) {
-  @include vp-1199 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-  }
-
-  @include vp-767 {
-    grid-column: auto;
-    grid-row: auto;
-  }
+.learning-process__item:nth-child(4n+3) {
+  order: 2;
 }
 
 .learning-process__item::before {
@@ -262,11 +242,9 @@
   }
 }
 
-.learning-process__item span::before {
-  content: "";
+.learning-process__item svg {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -282,29 +260,5 @@
     top: 21px;
     left: 34px;
     transform: scale(0.75);
-  }
-}
-
-.learning-process__item:nth-child(4n+1) {
-  & span::before {
-    background: url("./../../img/learning-process/map.svg") 0 0 / 25px 25px no-repeat;
-  }
-}
-
-.learning-process__item:nth-child(4n+2) {
-  & span::before {
-    background: url("./../../img/learning-process/boots.svg") 0 0 / 25px 25px no-repeat;
-  }
-}
-
-.learning-process__item:nth-child(4n+3) {
-  & span::before {
-    background: url("./../../img/learning-process/pine-tree.svg") 0 0 / 25px 25px no-repeat;
-  }
-}
-
-.learning-process__item:nth-child(4n+4) {
-  & span::before {
-    background: url("./../../img/learning-process/mountain.svg") 0 0 / 25px 25px no-repeat;
   }
 }
