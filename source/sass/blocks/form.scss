@@ -5,25 +5,25 @@
   padding: 312px 0 20px;
   overflow: hidden;
 
-  background: url("../../img/form/questions-background.jpg") 46% 0 / 1440px 800px no-repeat;
+  background: url("../../img/form/questions-background.webp") 46% 0 / 1440px 800px no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background: url("../../img/form/questions-background@2x.jpg") 46% 0 / 1440px 800px no-repeat;
+    background: url("../../img/form/questions-background@2x.webp") 46% 0 / 1440px 800px no-repeat;
   }
 
   @include vp-1199 {
-    background: url("../../img/form/questions-background.jpg") 61% 51% / 1440px 800px no-repeat;
+    background: url("../../img/form/questions-background.webp") 61% 51% / 1440px 800px no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/form/questions-background@2x.jpg") 61% 51% / 1440px 800px no-repeat;
+      background: url("../../img/form/questions-background@2x.webp") 61% 51% / 1440px 800px no-repeat;
     }
   }
 
   @include vp-767 {
-    background: url("../../img/form/questions-background-mobile.jpg") 50% 0 / cover no-repeat;
+    background: url("../../img/form/questions-background-mobile.webp") 50% 0 / cover no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../../img/form/questions-background-mobile@2x.jpg") 50% 0 / cover no-repeat;
+      background: url("../../img/form/questions-background-mobile@2x.webp") 50% 0 / cover no-repeat;
     }
   }
 

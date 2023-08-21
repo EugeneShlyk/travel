@@ -155,17 +155,21 @@
 }
 
 .learning-process__item:nth-child(20n+3)::before {
-  top: -82px;
-  left: 6px;
-  height: 56px;
-  width: 1px;
+  @include vp-1199 {
+    top: -82px;
+    left: 6px;
+    height: 56px;
+    width: 1px;
+  }
 }
 
 .learning-process__item:nth-child(20n+4)::before {
-  width: 110%;
-  bottom: auto;
-  top: -21px;
-  left: 0;
+  @include vp-1199 {
+    width: 110%;
+    bottom: auto;
+    top: -21px;
+    left: 0;
+  }
 }
 
 .learning-process__item:nth-child(4n+8)::before {
