@@ -28,28 +28,12 @@
   }
 }
 
-.header__logo-link-closed-menu {
-  margin: 0;
-  padding: 0;
+.header__logo-image-wrapper--closed-menu svg {
+  fill: rgba(255, 255, 255, 1);
 }
 
-.header__logo-link-opened-menu {
-  margin: 0;
-  padding: 0;
-}
-
-.header--navigation-closed .header__logo-link-opened-menu {
-  display: none;
-}
-
-.header--navigation-opened  {
-  .header__logo-link-closed-menu {
-    display: none;
-  }
-
-  .header__logo-link-opened-menu {
-    display: block;
-  }
+.header__logo-image-wrapper--opened-menu svg {
+  fill: rgba(45, 56, 63, 1);
 }
 
 @include vp-1199 {

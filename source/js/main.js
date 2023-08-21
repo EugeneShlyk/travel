@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   workHeroSlider();
   initToursSlider();
+  toggleMenuHandler();
 
   // Modules
   // ---------------------------------
@@ -34,7 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     videoWork();
     changePoster();
-    toggleMenuHandler();
     initInstructorsSlider();
     initCommentsSlider();
     initAdvantagesSlider();
