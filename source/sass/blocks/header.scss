@@ -8,14 +8,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 100px;
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
+  max-width: 1240px;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 
   @include vp-1199 {
     top: 22px;
     align-items: center;
     width: 768px;
+    min-width: auto;
     padding: 0 45px;
   }
 
@@ -90,14 +93,16 @@
   }
 }
 
-.header--navigation-closed .header__button-menu {
+.header__button-menu--closed {
   svg:last-child {
     display: none;
   }
 }
 
-.header--navigation-opened .header__button-menu svg:first-child {
-  display: none;
+.header__button-menu--opened {
+  svg:first-child {
+    display: none;
+  }
 }
 
 .header__phone {

@@ -11,9 +11,7 @@
   <link rel="preload" href="fonts/Montserrat/Montserrat-SemiBold.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat/Montserrat-ExtraBold.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.woff2" as="font">
-  <link rel="preload" href="img/hero/caucasus/hero-caucasus-mobile.jpg" as="image">
   <link rel="preload" href="img/hero/caucasus/hero-caucasus-mobile.webp" as="image">
-  <link rel="preload" href="img/hero/caucasus/hero-caucasus-mobile@2x.jpg" as="image">
   <link rel="preload" href="img/hero/caucasus/hero-caucasus-mobile@2x.webp" as="image">
 </head>
 <body>
@@ -58,7 +56,7 @@
       </ul>
     </nav>
 
-    <button class="header__button-menu" aria-label="открыть навигацию по сайту">
+    <button class="header__button-menu header__button-menu--closed" aria-label="открыть навигацию по сайту">
       <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M0 3.54541H26V5.71534H0V3.54541Z" fill="white"/>
         <path d="M0 20.2846H26V22.4545H0V20.2846Z" fill="white"/>
@@ -113,10 +111,10 @@
                   <div class="hero-card__video-wrapper">
                     <video
                       class="hero-card__video"
-                      preload="auto"
+                      preload="none"
                       playsinline
                       src="img/html-academy-courses.mp4"
-                      poster="img/hero/caucasus/hero-video-poster.jpg"
+                      poster="img/hero/caucasus/hero-video-poster.webp"
                     ></video>
 
                     <button
@@ -190,11 +188,12 @@
                       height="365"
                     >
                     <img
-                      src="img/hero/kamchatka/hero-kamchatka-foto.png"
-                      srcset="img/hero/kamchatka/hero-kamchatka-foto@2x.png 2x"
+                      data-src="img/hero/kamchatka/hero-kamchatka-foto.png"
+                      data-srcset="img/hero/kamchatka/hero-kamchatka-foto@2x.png 2x"
                       width="410"
                       height="459"
                       alt="фотографии людей на фоне гор Камчатки"
+                      class="lazyload"
                     >
                   </picture>
 
@@ -231,7 +230,7 @@
                   </div>
 
                   <iframe
-                    aria-label="воспроизведение аудио"
+                    title="воспроизведение аудиозаписи"
                     class="hero-card__inner-container-audio"
                     style="border:none; width:340px; height:220px;"
                     src="https://music.yandex.ru/iframe/#track/116161079/25474374"
@@ -520,6 +519,26 @@
                         <picture>
                           <source
                             media="(max-width: 767px)"
+                            srcset="img/instructors/mobile/instructors-alex-mobile.webp 1x, img/instructors/mobile/instructors-alex-mobile@2x.webp 2x"
+                            type="image/webp"
+                            width="250"
+                            height="212"
+                          >
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="img/instructors/tablet/instructors-alex-tablet.webp 1x, img/instructors/tablet/instructors-alex-tablet@2x.webp 2x"
+                            type="image/webp"
+                            width="176"
+                            height="212"
+                          >
+                          <source
+                            srcset="img/instructors/desktop/instructors-alex.webp 1x, img/instructors/desktop/instructors-alex@2x.webp 2x"
+                            width="238"
+                            height="212"
+                            type="image/webp"
+                          >
+                          <source
+                            media="(max-width: 767px)"
                             srcset="img/instructors/mobile/instructors-alex-mobile.jpg 1x, img/instructors/mobile/instructors-alex-mobile@2x.jpg 2x"
                             width="250"
                             height="212"
@@ -565,6 +584,26 @@
 
                       <div class="instructors-card__image">
                         <picture>
+                          <source
+                            media="(max-width: 767px)"
+                            srcset="img/instructors/mobile/instructors-svetlana-mobile.webp 1x, img/instructors/mobile/instructors-svetlana-mobile@2x.webp 2x"
+                            type="image/webp"
+                            width="250"
+                            height="212"
+                          >
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="img/instructors/tablet/instructors-svetlana-tablet.webp 1x, img/instructors/tablet/instructors-svetlana-tablet@2x.webp 2x"
+                            type="image/webp"
+                            width="176"
+                            height="212"
+                          >
+                          <source
+                            srcset="img/instructors/desktop/instructors-svetlana.webp 1x, img/instructors/desktop/instructors-svetlana@2x.webp 2x"
+                            width="238"
+                            height="212"
+                            type="image/webp"
+                          >
                           <source
                             media="(max-width: 767px)"
                             srcset="img/instructors/mobile/instructors-svetlana-mobile.jpg 1x, img/instructors/mobile/instructors-svetlana-mobile@2x.jpg 2x"
@@ -614,6 +653,26 @@
                         <picture>
                           <source
                             media="(max-width: 767px)"
+                            srcset="img/instructors/mobile/instructors-nadja-mobile.webp 1x, img/instructors/mobile/instructors-nadja-mobile@2x.webp 2x"
+                            type="image/webp"
+                            width="250"
+                            height="212"
+                          >
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="img/instructors/tablet/instructors-nadja-tablet.webp 1x, img/instructors/tablet/instructors-nadja-tablet@2x.webp 2x"
+                            type="image/webp"
+                            width="176"
+                            height="212"
+                          >
+                          <source
+                            srcset="img/instructors/desktop/instructors-nadja.webp 1x, img/instructors/desktop/instructors-nadja@2x.webp 2x"
+                            width="238"
+                            height="212"
+                            type="image/webp"
+                          >
+                          <source
+                            media="(max-width: 767px)"
                             srcset="img/instructors/mobile/instructors-nadja-mobile.jpg 1x, img/instructors/mobile/instructors-nadja-mobile@2x.jpg 2x"
                             width="250"
                             height="212"
@@ -661,6 +720,26 @@
                         <picture>
                           <source
                             media="(max-width: 767px)"
+                            srcset="img/instructors/mobile/instructors-fedor-mobile.webp 1x, img/instructors/mobile/instructors-fedor-mobile@2x.webp 2x"
+                            type="image/webp"
+                            width="250"
+                            height="212"
+                          >
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="img/instructors/tablet/instructors-fedor-tablet.webp 1x, img/instructors/tablet/instructors-fedor-tablet@2x.webp 2x"
+                            type="image/webp"
+                            width="176"
+                            height="212"
+                          >
+                          <source
+                            srcset="img/instructors/desktop/instructors-fedor.webp 1x, img/instructors/desktop/instructors-fedor@2x.webp 2x"
+                            width="238"
+                            height="212"
+                            type="image/webp"
+                          >
+                          <source
+                            media="(max-width: 767px)"
                             srcset="img/instructors/mobile/instructors-fedor-mobile.jpg 1x, img/instructors/mobile/instructors-fedor-mobile@2x.jpg 2x"
                             width="250"
                             height="212"
@@ -705,6 +784,26 @@
 
                       <div class="instructors-card__image">
                         <picture>
+                          <source
+                            media="(max-width: 767px)"
+                            srcset="img/instructors/mobile/instructors-alex-mobile.webp 1x, img/instructors/mobile/instructors-alex-mobile@2x.webp 2x"
+                            type="image/webp"
+                            width="250"
+                            height="212"
+                          >
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="img/instructors/tablet/instructors-alex-tablet.webp 1x, img/instructors/tablet/instructors-alex-tablet@2x.webp 2x"
+                            type="image/webp"
+                            width="176"
+                            height="212"
+                          >
+                          <source
+                            srcset="img/instructors/desktop/instructors-alex.webp 1x, img/instructors/desktop/instructors-alex@2x.webp 2x"
+                            width="238"
+                            height="212"
+                            type="image/webp"
+                          >
                           <source
                             media="(max-width: 767px)"
                             srcset="img/instructors/mobile/instructors-alex-mobile.jpg 1x, img/instructors/mobile/instructors-alex-mobile@2x.jpg 2x"
@@ -2108,6 +2207,7 @@
 
         <div class="contacts__map-wrapper">
           <iframe
+            title="месторасположение организации на сайте"
             class="contacts__map"
             src="https://yandex.ru/map-widget/v1/?ll=37.638577%2C55.816514&mode=poi&poi%5Bpoint%5D=37.637724%2C55.816619&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1773709440&z=16.8"
           ></iframe>

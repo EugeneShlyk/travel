@@ -12,6 +12,8 @@ export const toggleMenuHandler = () => {
 
   navigationToggle.addEventListener('click', () => {
     if (header.classList.contains('header--navigation-closed')) {
+      navigationToggle.classList.remove('header__button-menu--closed');
+      navigationToggle.classList.add('header__button-menu--opened');
       header.classList.remove('header--navigation-closed');
       header.classList.add('header--navigation-opened');
       body.classList.add('opened-menu');
@@ -26,6 +28,8 @@ export const toggleMenuHandler = () => {
 };
 
 const closeModal = () => {
+  navigationToggle.classList.add('header__button-menu--closed');
+  navigationToggle.classList.remove('header__button-menu--opened');
   header.classList.add('header--navigation-closed');
   header.classList.remove('header--navigation-opened');
   body.classList.remove('opened-menu');
