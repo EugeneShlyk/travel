@@ -2530,6 +2530,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero-card__inner {
+    padding: 0;
     background: url("./../../img/hero/overlay-hero-tablet.webp") 50% 0/100% 100% no-repeat;
   }
 }
@@ -3908,6 +3909,11 @@ button,
   margin: 0;
   padding: 0 20px;
 }
+@media (max-width: 1199px) {
+  .learning-process {
+    padding: 0;
+  }
+}
 
 .learning-process__inner {
   width: 1200px;
@@ -4039,7 +4045,7 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .learning-process__item--mountain {
+  .learning-process__item:nth-child(20n+4) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -4049,7 +4055,7 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .learning-process__item--mountain {
+  .learning-process__item:nth-child(20n+4) {
     grid-column: auto;
     grid-row: auto;
   }

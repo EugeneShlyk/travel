@@ -2,6 +2,10 @@
   width: 100%;
   margin: 0;
   padding: 0 20px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .learning-process__inner {
@@ -116,7 +120,7 @@
   }
 }
 
-.learning-process__item--mountain {
+.learning-process__item:nth-child(20n+4) {
   @include vp-1199 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;

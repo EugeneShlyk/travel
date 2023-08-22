@@ -10,6 +10,7 @@ export const initGallerySlider = () =>
     },
     simulateTouch: false,
     freeMode: true,
+    lazy: true,
     slidesPerView: 'auto',
     breakpoints: {
       320: {

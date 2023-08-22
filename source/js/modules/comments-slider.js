@@ -9,6 +9,7 @@ export const initCommentsSlider = () =>
       prevEl: '.comments__button--to-left',
     },
     simulateTouch: false,
+    lazy: true,
     breakpoints: {
       320: {
         slidesPerView: 1,
