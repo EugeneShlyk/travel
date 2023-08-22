@@ -2269,11 +2269,11 @@ button,
   }
 }
 
-.header__button-menu--closed svg:last-child {
+.header--navigation-closed .header__button-menu-icon:last-child {
   display: none;
 }
 
-.header__button-menu--opened svg:first-child {
+.header--navigation-opened .header__button-menu-icon:first-child {
   display: none;
 }
 
