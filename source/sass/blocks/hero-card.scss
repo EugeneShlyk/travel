@@ -105,13 +105,13 @@
 
   @include vp-1199 {
     align-items: center;
-    width: 768px;
+    //width: 768px;
     min-height: 1024px;
     padding: 174px 47px 120px;
   }
 
   @include vp-767 {
-    width: 320px;
+    //width: 320px;
     min-height: 568px;
     padding: 141px 18px 80px;
   }
@@ -143,6 +143,7 @@
 }
 
 .hero-card__inner-container p {
+  display: inline-block;
   max-width: 470px;
   margin: 0 0 37px;
   padding: 0;
@@ -192,9 +193,21 @@
   }
 }
 
-.hero-card__inner-container-link {
-  width: fit-content;
+.hero-card__inner-container-link-wrapper {
   margin: 0 0 20px;
+  padding: 0;
+
+  @include vp-1199 {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 233px;
+  }
+}
+
+.hero-card__inner-container-link {
+  display: inline-block;
+  width: fit-content;
+  margin: 0;
   padding: 20px 52px;
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
@@ -204,8 +217,9 @@
   border: 1px solid rgba(2, 102, 193, 1);
 
   @include vp-1199 {
+    width: 100%;
     padding: 20px 46px;
-    margin-bottom: 50px;
+    text-align: center;
   }
 
   @include vp-767 {
@@ -267,7 +281,7 @@
   left: 19px;
 }
 
-.hero-card__video-wrapper {
+.hero-card__video-wrapper-container{
   position: absolute;
   top: 301px;
   right: 0;
@@ -277,10 +291,18 @@
   padding: 0;
 
   @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.hero-card__video-wrapper {
+  margin: 0;
+  padding: 0;
+
+  @include vp-1199 {
     position: relative;
+    width: 100%;
     top: 0;
-    width: 442px;
-    height: 300px;
   }
 
   @include vp-767 {

@@ -17,7 +17,6 @@
   @include vp-1199 {
     top: 22px;
     align-items: center;
-    width: 768px;
     min-width: auto;
     padding: 0 45px;
   }
@@ -26,7 +25,6 @@
     display: grid;
     grid-template-columns: auto max-content;
     top: 15px;
-    width: 320px;
     padding: 0 15px;
   }
 }

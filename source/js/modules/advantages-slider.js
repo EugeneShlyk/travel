@@ -10,6 +10,7 @@ export const initAdvantagesSlider = () =>
       prevEl: '.advantages__button--to-left',
     },
     simulateTouch: false,
+    loop: true,
     breakpoints: {
       320: {
         slidesPerView: 1,

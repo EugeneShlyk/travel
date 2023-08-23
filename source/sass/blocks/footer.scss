@@ -22,6 +22,11 @@
   margin: 0 auto;
   padding: 31px 0 30px;
 
+  @media (max-width: 1240px) {
+    width: 1160px;
+    column-gap: 79px;
+  }
+
   @include vp-1199 {
     padding: 43px 0 30px;
     grid-template-columns: repeat(2, auto);
