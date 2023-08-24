@@ -42,6 +42,8 @@
 }
 
 .footer__logo {
+  user-select: none;
+
   &:hover,
   &:focus-visible {
     outline: none;
@@ -62,6 +64,7 @@
   font-weight: 600;
   line-height: 18px;
   align-self: center;
+  user-select: none;
 
   @include vp-1199 {
     display: none;

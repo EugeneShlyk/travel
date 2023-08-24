@@ -153,7 +153,7 @@
 
 .learning-process__item:nth-child(4n+1)::before {
   @include vp-1199 {
-    width: 109%;
+    width: 100%;
     bottom: -15px;
     left: 0;
   }
@@ -161,9 +161,9 @@
 
 .learning-process__item:nth-child(4n+2)::before {
   @include vp-1199 {
-    width: 105%;
+    width: 90%;
     bottom: -15px;
-    left: -106%;
+    left: -90%;
   }
 }
 
@@ -178,7 +178,7 @@
 
 .learning-process__item:nth-child(20n+4)::before {
   @include vp-1199 {
-    width: 110%;
+    width: 105%;
     bottom: auto;
     top: -21px;
     left: 0;
