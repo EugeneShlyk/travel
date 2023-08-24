@@ -41,6 +41,18 @@
   }
 }
 
+.footer__logo {
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .footer__phone-link {
   justify-self: end;
   margin: 3px 0 0 63px;
@@ -54,18 +66,15 @@
   @include vp-1199 {
     display: none;
   }
-}
 
-.footer__logo,
-.footer__phone-link {
   &:hover,
   &:focus-visible {
+    color: rgba(28, 51, 116, 1);
     outline: none;
-    opacity: 0.8;
   }
 
   &:active {
-    opacity: 0.5;
+    color: rgba(2, 102, 193, 1);
   }
 }
 

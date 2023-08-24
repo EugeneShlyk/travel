@@ -207,6 +207,22 @@
   }
 }
 
+.contacts__list-item a {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+
+  &:hover,
+  &:focus-visible {
+    color: rgba(2, 102, 193, 1);
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(28, 51, 116, 1);
+  }
+}
+
 .contacts__list-item p {
   margin: 0;
   padding: 0;

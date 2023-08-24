@@ -23,7 +23,7 @@
       transition: border 0.3s ease;
 
       @media screen and (max-width: 1199px) {
-        padding: 15px 0;
+        padding: 15px;
 
         &::placeholder {
           opacity: 0.5;
@@ -38,10 +38,18 @@
 
       &:hover:not(:disabled) {
         border: 1px solid rgba(2, 102, 193, 1);
+
+        &::placeholder  {
+          color: rgba(2, 102, 193, 1);
+        }
       }
 
       &:focus:not(:disabled) {
         border: 1px solid rgba(28, 51, 116, 1);
+
+        &::placeholder  {
+          opacity: 0;
+        }
       }
 
       &:disabled {
