@@ -2558,14 +2558,13 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 1024px;
-    padding: 174px 47px 120px;
+    min-height: auto;
+    padding: 174px 47px 150px;
   }
 }
 @media (max-width: 767px) {
   .hero-card__inner-container {
-    min-height: 568px;
-    padding: 141px 18px 80px;
+    padding: 141px 18px 112px;
   }
 }
 
@@ -2581,6 +2580,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero-card__inner-container h2 {
+    max-width: 670px;
     margin-bottom: 13px;
     font-size: 56px;
     line-height: 56px;
@@ -2589,6 +2589,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero-card__inner-container h2 {
+    width: 290px;
     margin-bottom: 13px;
     font-size: 30px;
     font-weight: 800;
@@ -2613,43 +2614,11 @@ button,
 }
 @media (max-width: 767px) {
   .hero-card__inner-container p {
+    width: 290px;
     margin-bottom: 20px;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
-  }
-}
-
-.hero-card__inner-container img {
-  position: absolute;
-  top: 202px;
-  right: 0;
-}
-@media (max-width: 1199px) {
-  .hero-card__inner-container img {
-    position: static;
-    top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .hero-card__inner-container img {
-    display: none;
-  }
-}
-
-.hero-card__inner-container-audio {
-  position: absolute;
-  top: 301px;
-  right: 0;
-}
-@media (max-width: 1199px) {
-  .hero-card__inner-container-audio {
-    position: static;
-  }
-}
-@media (max-width: 767px) {
-  .hero-card__inner-container-audio {
-    display: none;
   }
 }
 
@@ -2662,6 +2631,11 @@ button,
     width: 100%;
     margin-bottom: 50px;
     padding: 0 233px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-card__inner-container-link-wrapper {
+    padding: 0 52px;
   }
 }
 
@@ -2704,15 +2678,33 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .hero-card-kamchatka .hero-card__inner-container-link {
+  .hero-card-kamchatka .hero-card__inner-container-link-wrapper {
     margin-bottom: 34px;
   }
-}
-@media (max-width: 1199px) {
-  .hero-card-altai .hero-card__inner-container-link {
-    margin-bottom: 70px;
+  .hero-card-kamchatka .hero-card__inner-container {
+    padding-bottom: 170px;
   }
 }
+@media (max-width: 1199px) and (max-width: 767px) {
+  .hero-card-kamchatka .hero-card__inner-container {
+    padding-bottom: 108px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero-card-altai .hero-card__inner-container-link-wrapper {
+    margin-bottom: 68px;
+  }
+  .hero-card-altai .hero-card__inner-container {
+    padding-bottom: 280px;
+  }
+}
+@media (max-width: 1199px) and (max-width: 767px) {
+  .hero-card-altai .hero-card__inner-container {
+    padding-bottom: 73px;
+  }
+}
+
 .hero-card__box {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
@@ -2757,20 +2749,25 @@ button,
 }
 @media (max-width: 1199px) {
   .hero-card__video-wrapper-container {
+    position: static;
     width: 100%;
+    height: auto;
+    padding: 0 116px 68px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-card__video-wrapper-container {
+    display: none;
+    padding: 0;
   }
 }
 
 .hero-card__video-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
   margin: 0;
   padding: 0;
-}
-@media (max-width: 1199px) {
-  .hero-card__video-wrapper {
-    position: relative;
-    width: 100%;
-    top: 0;
-  }
 }
 @media (max-width: 767px) {
   .hero-card__video-wrapper {
@@ -2780,11 +2777,19 @@ button,
 
 .hero-card__video {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 0;
   left: 0;
+}
+@media (max-width: 1199px) {
+  .hero-card__video {
+    position: static;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .hero-card__video {
+    display: none;
+  }
 }
 
 .hero-card__video-button {
@@ -2828,6 +2833,39 @@ button,
 .hero-card__video-button:disabled path {
   stroke: rgba(2, 102, 193, 0.1);
   fill: rgba(2, 102, 193, 0.1);
+}
+
+.hero-card__inner-container img {
+  position: absolute;
+  top: 202px;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .hero-card__inner-container img {
+    position: static;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .hero-card__inner-container img {
+    display: none;
+  }
+}
+
+.hero-card__inner-container-audio {
+  position: absolute;
+  top: 301px;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .hero-card__inner-container-audio {
+    position: static;
+  }
+}
+@media (max-width: 767px) {
+  .hero-card__inner-container-audio {
+    display: none;
+  }
 }
 
 .footer {
@@ -3029,13 +3067,11 @@ button,
 }
 @media (max-width: 1199px) {
   .tours {
-    width: 676px;
-    padding: 83px 0 30px;
+    padding: 83px 15px 30px;
   }
 }
 @media (max-width: 767px) {
   .tours {
-    width: 290px;
     padding: 66px 0 20px;
   }
 }
@@ -3057,6 +3093,7 @@ button,
 @media (max-width: 1199px) {
   .tours__header-part {
     margin-bottom: 38px;
+    padding: 0 15px;
   }
 }
 @media (max-width: 767px) {
@@ -3106,6 +3143,7 @@ button,
 @media (max-width: 767px) {
   .tours__header-part h2::after {
     top: -4px;
+    left: 15px;
     font-size: 26px;
     line-height: 26px;
   }
@@ -3123,7 +3161,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__slider {
-    width: 100%;
+    width: 290px;
     margin-bottom: 29px;
   }
 }
@@ -3241,12 +3279,12 @@ button,
 }
 @media (max-width: 1199px) {
   .tours-training-wrapper__inner {
-    width: 768px;
+    padding: 0 30px;
   }
 }
 @media (max-width: 767px) {
   .tours-training-wrapper__inner {
-    width: 320px;
+    padding: 0;
   }
 }
 
@@ -3661,13 +3699,12 @@ button,
 }
 @media (max-width: 1199px) {
   .training__inner {
-    width: 708px;
+    padding: 0 0 5px;
   }
 }
 @media (max-width: 767px) {
   .training__inner {
-    width: 320px;
-    padding: 0 15px 15px;
+    padding: 0 0 15px;
   }
 }
 
@@ -3681,6 +3718,7 @@ button,
 }
 @media (max-width: 1199px) {
   .training__inner h2 {
+    padding-left: 15px;
     margin-bottom: 21px;
     font-size: 25px;
     line-height: 25px;
@@ -3690,6 +3728,7 @@ button,
   .training__inner h2 {
     margin-top: 36px;
     margin-bottom: 17px;
+    padding: 0 15px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -3731,23 +3770,52 @@ button,
 }
 @media (max-width: 1199px) {
   .training__inner > p {
-    max-width: 550px;
+    width: auto;
     margin-bottom: 57px;
+    padding-left: 15px;
+    padding-right: 133px;
   }
 }
 @media (max-width: 767px) {
   .training__inner > p {
     width: 100%;
     margin-bottom: 38px;
+    padding: 0 15px;
     font-size: 14px;
     line-height: 20px;
   }
 }
 
 .instructors {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .instructors {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.instructors__inner {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 1199px) {
+  .instructors__inner {
+    width: 708px;
+    padding: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .instructors__inner {
+    width: 320px;
+    padding: 15px;
+  }
 }
 
 .instructors__header {
@@ -3766,7 +3834,14 @@ button,
 }
 @media (max-width: 1199px) {
   .instructors__header {
-    margin-bottom: 24px;
+    margin-bottom: 9px;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .instructors__header {
+    padding: 0 15px;
+    margin-bottom: 9px;
   }
 }
 
@@ -3828,7 +3903,6 @@ button,
   height: 100%;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
-  z-index: -1;
 }
 
 .instructors-card__inner {
@@ -3957,7 +4031,7 @@ button,
 }
 @media (max-width: 767px) {
   .learning-process__inner {
-    padding: 18px 15px 0;
+    padding: 3px 15px 0;
   }
 }
 

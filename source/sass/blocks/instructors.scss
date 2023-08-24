@@ -1,7 +1,30 @@
 .instructors {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @include vp-767 {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.instructors__inner {
   width: 100%;
   margin: 0;
   padding: 0;
+
+  @include vp-1199 {
+    width: 708px;
+    padding: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    padding: 15px;
+  }
 }
 
 .instructors__header {
@@ -13,7 +36,13 @@
   padding: 0;
 
   @include vp-1199 {
-    margin-bottom: 24px;
+    margin-bottom: 9px;
+    padding: 0 15px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    margin-bottom: 9px;
   }
 }
 
