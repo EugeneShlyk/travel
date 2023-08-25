@@ -2366,6 +2366,13 @@ button,
 .header--navigation-opened .header__phone {
   color: rgb(45, 56, 63);
 }
+.header--navigation-opened .header__phone:hover, .header--navigation-opened .header__phone:focus-visible {
+  color: rgb(28, 51, 116);
+  outline: none;
+}
+.header--navigation-opened .header__phone:active {
+  color: rgb(2, 102, 193);
+}
 
 .header--navigation-opened .navigation__list-item-link {
   font-weight: 700;
