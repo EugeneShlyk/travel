@@ -8,14 +8,8 @@ export const addVideoSrc = () => {
 
       if (slide.querySelector('.hero-card__video') &&
         slide.classList.contains('swiper-slide-active')) {
-        console.log('я работаю');
-        console.log(video);
-        slide.style.background = 'red';
-        video.
-        // video.src = 'img/html-academy-courses.mp4';
-        // video.setAttribute('src', 'img/html-academy-courses.mp4');
       } else {
-        video.removeAttribute('src');
+        video.pause();
       }
     });
   });
