@@ -16,11 +16,3 @@ export const addAudioSrc = () => {
     });
   });
 };
-
-
-// const video = slide.querySelector('.hero-card__video');
-// if (slide.classList.contains('swiper-slide-active')) {
-//   video.src = 'img/html-academy-courses.mp4';
-// } else {
-//   video.src = '';
-// }

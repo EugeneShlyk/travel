@@ -1,4 +1,5 @@
-import {addAudioSrc} from './modules/add-src-media-hero.js';
+import {addAudioSrc} from './modules/add-audio-src.js';
+import {addVideoSrc} from './modules/add-video-src.js';
 import {initAdvantagesSlider} from './modules/advantages-slider.js';
 import {initCommentsSlider} from './modules/comments-slider.js';
 import {initGallerySlider} from './modules/gallery-slider.js';
@@ -41,6 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAdvantagesSlider();
     initGallerySlider();
     addAudioSrc();
+    addVideoSrc();
   });
 });
 
