@@ -55,15 +55,22 @@
   }
 }
 
-.footer__phone-link {
+.footer__phone-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   justify-self: end;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.footer__phone-link {
   margin: 3px 0 0 63px;
   padding: 0;
   color: rgba(45, 56, 63, 1);
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  align-self: center;
   user-select: none;
 
   @include vp-1199 {
@@ -84,7 +91,8 @@
 .footer__social {
   grid-column: 1 / 4;
   justify-self: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   gap: 15px;
   width: fit-content;
   margin: 0;

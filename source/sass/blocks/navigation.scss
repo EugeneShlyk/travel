@@ -3,6 +3,8 @@
   padding: 0;
   background: transparent;
   justify-self: center;
+  display: flex;
+  justify-content: center;
 
   @include vp-1199 {
     position: absolute;
@@ -22,19 +24,20 @@
 }
 
 .navigation__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
   gap: 30px;
-  flex-wrap: wrap;
-  max-width: 616px;
   margin: 0;
   padding: 0;
   list-style: none;
   background: transparent;
 
   @include vp-1199 {
+    display: flex;
     flex-direction: column;
     gap: 0;
-    max-width: 100%;
+    width: 100%;
+    height: fit-content;
     padding: 103px 0 65px 44px;
     background: rgba(255, 255, 255, 1);
   }

@@ -2211,9 +2211,9 @@ button,
   display: grid;
   -ms-grid-columns: auto 1fr auto;
   grid-template-columns: auto 1fr auto;
-  -webkit-column-gap: 130px;
-     -moz-column-gap: 130px;
-          column-gap: 130px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
   width: 100%;
   min-width: 1200px;
   max-width: 1240px;
@@ -2223,9 +2223,6 @@ button,
 @media (max-width: 1199px) {
   .header {
     top: 22px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     min-width: auto;
     padding: 0 45px;
   }
@@ -2243,6 +2240,12 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .header__logo-image-wrapper {
+    text-align: center;
+  }
+}
+
 .header__logo-image-wrapper--closed-menu svg {
   fill: rgb(255, 255, 255);
 }
@@ -2253,9 +2256,16 @@ button,
 
 @media (max-width: 1199px) {
   .header__logo-link {
+    margin: 8px 0 0;
     z-index: 1;
   }
 }
+@media (max-width: 767px) {
+  .header__logo-link {
+    margin: 0;
+  }
+}
+
 .header__logo-link:hover, .header__logo-link:focus-visible {
   opacity: 0.7;
   outline: none;
@@ -2286,7 +2296,7 @@ button,
     display: block;
     width: 26px;
     height: 26px;
-    margin: 0 101px 0 0;
+    margin: 16px 101px 0 0;
     padding: 0;
     background: transparent;
     border: 1px solid transparent;
@@ -2333,6 +2343,16 @@ button,
   margin: 0;
   padding: 0;
 }
+@media (max-width: 767px) {
+  .header__phone-wrapper {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-top: 1px;
+  }
+}
 
 .header__phone {
   margin-top: 24px;
@@ -2355,12 +2375,7 @@ button,
 }
 @media (max-width: 767px) {
   .header__phone {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    margin-top: 1px;
+    margin-top: 0;
     font-size: 14px;
     line-height: 14px;
   }
@@ -2421,6 +2436,12 @@ button,
   background: transparent;
   -ms-grid-column-align: center;
       justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .navigation {
@@ -2440,13 +2461,11 @@ button,
   }
 }
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 616px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2454,12 +2473,18 @@ button,
 }
 @media (max-width: 1199px) {
   .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0;
-    max-width: 100%;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 103px 0 65px 44px;
     background: rgb(255, 255, 255);
   }
@@ -2724,7 +2749,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero-card__inner-container-link-wrapper {
-    padding: 0 52px;
+    padding: 0 50px;
   }
 }
 
@@ -3036,18 +3061,28 @@ button,
   opacity: 0.5;
 }
 
-.footer__phone-link {
+.footer__phone-link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
   -ms-grid-column-align: end;
       justify-self: end;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.footer__phone-link {
   margin: 3px 0 0 63px;
   padding: 0;
   color: rgb(45, 56, 63);
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3072,9 +3107,10 @@ button,
   grid-column: 1/4;
   -ms-grid-column-align: center;
       justify-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 15px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -3208,6 +3244,7 @@ button,
 @media (max-width: 767px) {
   .tours__header-part {
     margin-bottom: 28px;
+    padding: 0 15px;
   }
 }
 
@@ -3423,17 +3460,8 @@ button,
 
 .tours-card {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 380px;
   height: 412px;
-  margin: 0;
-  padding: 28px 20px;
   color: rgb(255, 255, 255);
   background: transparent;
 }
@@ -3445,7 +3473,6 @@ button,
 }
 @media (max-width: 767px) {
   .tours-card {
-    padding-bottom: 26px;
     background-position: 55.5% 0;
   }
 }
@@ -3485,6 +3512,25 @@ button,
   width: 100%;
   height: 100%;
   background: url("../../img/tours-card/overlay-tours.webp");
+}
+
+.tours-card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 28px 20px;
+  overflow: auto;
+}
+@media (max-width: 767px) {
+  .tours-card__container {
+    padding-bottom: 26px;
+  }
 }
 
 .tours-card__inner {
@@ -4088,6 +4134,12 @@ button,
     padding: 0 15px;
   }
 }
+@media (max-width: 767px) {
+  .instructors-card__middle-box {
+    padding: 0 30px 0 20px;
+  }
+}
+
 .instructors-card__middle-box span {
   max-width: 115px;
   font-size: 14px;
@@ -4115,7 +4167,7 @@ button,
   fill: rgb(45, 56, 63);
 }
 
-.instructors-card p {
+.instructors-card__inner p {
   width: 100%;
   margin: 0 0 10px;
   padding: 0 20px;
@@ -4124,9 +4176,14 @@ button,
   line-height: 16px;
 }
 @media (max-width: 1199px) {
-  .instructors-card p {
+  .instructors-card__inner p {
     padding: 0 15px;
     line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .instructors-card__inner p {
+    padding: 0 20px;
   }
 }
 
@@ -5048,6 +5105,7 @@ button,
   padding: 0;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background: rgb(255, 255, 255);
+  overflow: auto;
 }
 @media (max-width: 1199px) {
   .advantages-card {
@@ -5072,9 +5130,8 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 40px 20px;
+  margin: 40px 20px 35px;
   padding: 0;
-  overflow: auto;
 }
 @media (max-width: 1199px) {
   .advantages-card__inner {
@@ -5158,12 +5215,9 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 31px;
-  margin: 3px 0 0 0;
+  margin: 19px 0 0 0;
   padding: 0;
   list-style: none;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -5860,6 +5914,7 @@ button,
        -moz-column-gap: 6px;
             column-gap: 6px;
     row-gap: 9px;
+    padding-right: 70px;
   }
 }
 
