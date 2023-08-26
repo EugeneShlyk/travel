@@ -24,6 +24,10 @@
   padding: 0;
   background: transparent;
 
+  @media (max-width: 1250px) {
+    transform: translateX(860%);
+  }
+
   @include vp-1199 {
     top: auto;
     right: 50%;

@@ -4,10 +4,9 @@
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: 100px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 130px;
   width: 100%;
   min-width: 1200px;
   max-width: 1240px;
@@ -44,7 +43,7 @@
 }
 
 .header__logo-link {
-  align-self: end;
+  //align-self: end;
 
   &:hover,
   &:focus-visible {
@@ -111,6 +110,13 @@
 
 .header--navigation-opened .header__button-menu-icon:first-child {
   display: none;
+}
+
+.header__phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .header__phone {

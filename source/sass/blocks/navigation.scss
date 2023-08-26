@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background: transparent;
+  justify-self: center;
 
   @include vp-1199 {
     position: absolute;
@@ -22,7 +23,7 @@
 
 .navigation__list {
   display: flex;
-  gap: 28px;
+  gap: 30px;
   flex-wrap: wrap;
   max-width: 616px;
   margin: 0;
