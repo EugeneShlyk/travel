@@ -5975,11 +5975,11 @@ button,
           user-select: none;
 }
 .contacts__list-item a:hover, .contacts__list-item a:focus-visible {
-  color: rgb(2, 102, 193);
+  color: rgb(28, 51, 116);
   outline: none;
 }
 .contacts__list-item a:active {
-  color: rgba(2, 102, 193, 0.5);
+  color: rgb(2, 102, 193);
 }
 
 .contacts__list-item p {
