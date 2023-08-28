@@ -2355,8 +2355,7 @@ button,
 }
 
 .header__phone {
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin: 24px 0 0;
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 600;
@@ -2461,15 +2460,19 @@ button,
   }
 }
 .navigation__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto auto auto;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 30px;
-  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 614px;
+  margin: 0 0 0 30px;
   padding: 0;
   list-style: none;
   background: transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (max-width: 1199px) {
   .navigation__list {
@@ -2496,7 +2499,7 @@ button,
 }
 
 .navigation__list-item {
-  margin: 21px 0 0;
+  margin: 21px 30px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -4322,6 +4325,9 @@ button,
   margin: 30px 0 0;
   padding: 0 0 0 40px;
   position: relative;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 @media (max-width: 1199px) {
   .learning-process__item {
@@ -5922,8 +5928,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  -ms-grid-row-align: center;
-      align-self: center;
+  margin-top: 12px;
 }
 @media (max-width: 1199px) {
   .contacts__list-item img {
@@ -5933,6 +5938,7 @@ button,
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) {
