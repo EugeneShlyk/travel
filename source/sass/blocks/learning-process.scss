@@ -57,9 +57,9 @@
 }
 
 .learning-process__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 31px;
   width: 100%;
   margin: 0 auto;
   padding: 0 0 50px;
@@ -67,15 +67,14 @@
   position: relative;
 
   @media (max-width: 1239px) {
-    gap: 25px;
+    gap: 20px;
   }
 
   @media (max-width: 1224px) {
-    gap: 15px;
+    gap: 11px;
   }
 
   @include vp-1199 {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 60px;
     column-gap: 28px;
@@ -282,7 +281,7 @@
 
 .learning-process__item svg {
   position: absolute;
-  top: 10px;
+  bottom: 12px;
   left: 0;
   width: 25px;
   height: 25px;

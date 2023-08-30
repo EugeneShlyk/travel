@@ -2485,6 +2485,7 @@ button,
             flex-direction: column;
     gap: 0;
     width: 100%;
+    margin: 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -3464,7 +3465,7 @@ button,
 .tours-card {
   position: relative;
   width: 380px;
-  height: 412px;
+  min-height: 412px;
   color: rgb(255, 255, 255);
   background: transparent;
 }
@@ -3514,7 +3515,7 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../../img/tours-card/overlay-tours.webp");
+  background: url("../../img/tours-card/overlay-tours.webp") 50% 50%/cover no-repeat;
 }
 
 .tours-card__container {
@@ -3525,10 +3526,12 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 412px;
   margin: 0;
   padding: 28px 20px;
-  overflow: auto;
 }
 @media (max-width: 767px) {
   .tours-card__container {
@@ -3545,7 +3548,7 @@ button,
      -moz-column-gap: 8px;
           column-gap: 8px;
   row-gap: 16px;
-  margin: auto 0 0;
+  margin: 0;
   padding: 0;
   z-index: 1;
 }
@@ -4256,12 +4259,11 @@ button,
 }
 
 .learning-process__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  gap: 31px;
   width: 100%;
   margin: 0 auto;
   padding: 0 0 50px;
@@ -4270,18 +4272,16 @@ button,
 }
 @media (max-width: 1239px) {
   .learning-process__list {
-    gap: 25px;
+    gap: 20px;
   }
 }
 @media (max-width: 1224px) {
   .learning-process__list {
-    gap: 15px;
+    gap: 11px;
   }
 }
 @media (max-width: 1199px) {
   .learning-process__list {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     row-gap: 60px;
@@ -4509,7 +4509,7 @@ button,
 
 .learning-process__item svg {
   position: absolute;
-  top: 10px;
+  bottom: 12px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -5106,12 +5106,11 @@ button,
 
 .advantages-card {
   width: 380px;
-  height: 329px;
+  min-height: 329px;
   margin: 0;
   padding: 0;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background: rgb(255, 255, 255);
-  overflow: auto;
 }
 @media (max-width: 1199px) {
   .advantages-card {

@@ -1,11 +1,10 @@
 .advantages-card {
   width: 380px;
-  height: 329px;
+  min-height: 329px;
   margin: 0;
   padding: 0;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background: rgba(255, 255, 255, 1);
-  overflow: auto;
 
   @include vp-1199 {
     width: 324px;
