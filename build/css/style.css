@@ -2465,7 +2465,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 614px;
+  width: 620px;
   margin: 0 0 0 30px;
   padding: 0;
   list-style: none;
@@ -3468,6 +3468,7 @@ button,
   min-height: 412px;
   color: rgb(255, 255, 255);
   background: transparent;
+  height: auto;
 }
 @media (max-width: 1199px) {
   .tours-card {
@@ -3532,6 +3533,7 @@ button,
   min-height: 412px;
   margin: 0;
   padding: 28px 20px;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .tours-card__container {
@@ -4322,6 +4324,7 @@ button,
 
 .learning-process__item {
   width: 277px;
+  height: auto;
   margin: 30px 0 0;
   padding: 0 0 0 40px;
   position: relative;
@@ -5107,6 +5110,7 @@ button,
 .advantages-card {
   width: 380px;
   min-height: 329px;
+  height: auto;
   margin: 0;
   padding: 0;
   border: 1px solid rgba(2, 102, 193, 0.1);
@@ -5135,6 +5139,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
   margin: 40px 20px 35px;
   padding: 0;
 }
